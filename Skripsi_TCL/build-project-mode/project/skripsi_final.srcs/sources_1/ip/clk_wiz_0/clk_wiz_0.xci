@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "clk_wiz_0",
     "component_reference": "xilinx.com:ip:clk_wiz:6.0",
-    "ip_revision": "16",
+    "ip_revision": "17",
     "gen_directory": "../../../../skripsi_final.gen/sources_1/ip/clk_wiz_0",
     "parameters": {
       "component_parameters": {
@@ -154,9 +154,9 @@
         "SS_MOD_TIME": [ { "value": "0.004", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "OVERRIDE_MMCM": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "MMCM_NOTES": [ { "value": "None", "resolve_type": "user", "usage": "all" } ],
-        "MMCM_DIVCLK_DIVIDE": [ { "value": "2", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "MMCM_DIVCLK_DIVIDE": [ { "value": "2", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "MMCM_BANDWIDTH": [ { "value": "OPTIMIZED", "resolve_type": "user", "usage": "all" } ],
-        "MMCM_CLKFBOUT_MULT_F": [ { "value": "19.125", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "MMCM_CLKFBOUT_MULT_F": [ { "value": "19.125", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "MMCM_CLKFBOUT_PHASE": [ { "value": "0.000", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "MMCM_CLKFBOUT_USE_FINE_PS": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "MMCM_CLKIN1_PERIOD": [ { "value": "10.000", "resolve_type": "user", "format": "float", "usage": "all" } ],
@@ -167,7 +167,7 @@
         "MMCM_REF_JITTER1": [ { "value": "0.010", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "MMCM_REF_JITTER2": [ { "value": "0.010", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "MMCM_STARTUP_WAIT": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
-        "MMCM_CLKOUT0_DIVIDE_F": [ { "value": "12.500", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "MMCM_CLKOUT0_DIVIDE_F": [ { "value": "12.500", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "MMCM_CLKOUT0_DUTY_CYCLE": [ { "value": "0.500", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "MMCM_CLKOUT0_PHASE": [ { "value": "0.000", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "MMCM_CLKOUT0_USE_FINE_PS": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
@@ -245,8 +245,8 @@
         "CDDCREQ_PORT": [ { "value": "cddcreq", "resolve_type": "user", "usage": "all" } ],
         "ENABLE_CLKOUTPHY": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "CLKOUTPHY_REQUESTED_FREQ": [ { "value": "600.000", "resolve_type": "user", "format": "float", "usage": "all" } ],
-        "CLKOUT1_JITTER": [ { "value": "172.253", "resolve_type": "user", "format": "float", "usage": "all" } ],
-        "CLKOUT1_PHASE_ERROR": [ { "value": "163.698", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "CLKOUT1_JITTER": [ { "value": "172.253", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
+        "CLKOUT1_PHASE_ERROR": [ { "value": "163.698", "value_src": "user", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "CLKOUT2_JITTER": [ { "value": "0.0", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "CLKOUT2_PHASE_ERROR": [ { "value": "0.0", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "CLKOUT3_JITTER": [ { "value": "0.0", "resolve_type": "user", "format": "float", "usage": "all" } ],
@@ -583,26 +583,26 @@
         "C_VCO_MAX": [ { "value": "1200.000", "resolve_type": "generated", "format": "float", "usage": "all" } ]
       },
       "project_parameters": {
-        "ARCHITECTURE": [ { "value": "artix7", "usage": "all" } ],
-        "BASE_BOARD_PART": [ { "value": "", "usage": "all" } ],
-        "BOARD_CONNECTIONS": [ { "value": "", "usage": "all" } ],
-        "DEVICE": [ { "value": "xc7a35t", "usage": "all" } ],
-        "PACKAGE": [ { "value": "cpg236", "usage": "all" } ],
-        "PREFHDL": [ { "value": "VERILOG", "usage": "all" } ],
-        "SILICON_REVISION": [ { "value": "", "usage": "all" } ],
-        "SIMULATOR_LANGUAGE": [ { "value": "MIXED", "usage": "all" } ],
-        "SPEEDGRADE": [ { "value": "-1", "usage": "all" } ],
-        "STATIC_POWER": [ { "value": "", "usage": "all" } ],
-        "TEMPERATURE_GRADE": [ { "value": "", "usage": "all" } ]
+        "ARCHITECTURE": [ { "value": "artix7", "resolve_type": "generated", "usage": "all" } ],
+        "BASE_BOARD_PART": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "BOARD_CONNECTIONS": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "DEVICE": [ { "value": "xc7a35t", "resolve_type": "generated", "usage": "all" } ],
+        "PACKAGE": [ { "value": "cpg236", "resolve_type": "generated", "usage": "all" } ],
+        "PREFHDL": [ { "value": "VERILOG", "resolve_type": "generated", "usage": "all" } ],
+        "SILICON_REVISION": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED", "resolve_type": "generated", "usage": "all" } ],
+        "SPEEDGRADE": [ { "value": "-1", "resolve_type": "generated", "usage": "all" } ],
+        "STATIC_POWER": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "TEMPERATURE_GRADE": [ { "value": "", "resolve_type": "generated", "usage": "all" } ]
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "16" } ],
+        "IPREVISION": [ { "value": "17" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../skripsi_final.gen/sources_1/ip/clk_wiz_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
-        "SWVERSION": [ { "value": "2025.1" } ],
+        "SWVERSION": [ { "value": "2025.2" } ],
         "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },
@@ -667,5 +667,5 @@
       }
     }
   },
-  "checksum": "0ad7d05b"
+  "checksum": "875eb1b5"
 }
