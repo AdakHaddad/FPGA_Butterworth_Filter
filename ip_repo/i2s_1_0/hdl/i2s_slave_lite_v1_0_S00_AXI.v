@@ -17,10 +17,11 @@ module i2s_slave_lite_v1_0_S00_AXI #
     output wire i2s_ws,         
     output wire i2s_data,       
 
-       
+    // Direct PCM input from external filter (e.g. filter_coeff y_out).
+    // Sampled at every I2S frame boundary (bit_count_q == 0).
+    // y_out is stable between sample_valid pulses so no handshake is needed.
+    input  wire [15:0]                              pcm_in,
 
-
-       
     // Global clock and active-low reset
     input  wire                                     S_AXI_ACLK,
     input  wire                                     S_AXI_ARESETN,
@@ -454,9 +455,8 @@ module i2s_slave_lite_v1_0_S00_AXI #
                     // shadow registers.  This ensures left and right channels
                     // are always from the same firmware write pair.
                     if (bit_count_q == 6'd0) begin
-                        sample_left_q          <= slv_reg0;
-                        sample_right_q         <= slv_reg1;
-                        // Toggle STATUS[0] so firmware can detect frame rate
+                        sample_left_q          <= {pcm_in, 16'd0};
+                        sample_right_q         <= {pcm_in, 16'd0};
                         current_latch_status_q <= !current_latch_status_q;
                     end
                 end

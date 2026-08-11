@@ -29,10 +29,8 @@ module i2s #
     output wire i2s_ws,
     output wire i2s_data,
 
-
-
-
-
+    // PCM input from filter – connect y_out [15:0] directly here
+    input  wire [15:0] pcm_in,
     // AXI4-Lite slave interface
     input  wire                            s00_axi_aclk,
     input  wire                            s00_axi_aresetn,
@@ -66,6 +64,7 @@ module i2s #
         .i2s_bclk          (i2s_bclk),
         .i2s_ws            (i2s_ws),
         .i2s_data          (i2s_data),
+        .pcm_in            (pcm_in),
         // audio_clk is the 100 MHz clock used by both AXI registers and I2S DDS.
         .S_AXI_ACLK        (audio_clk),
         .S_AXI_ARESETN     (s00_axi_aresetn),
