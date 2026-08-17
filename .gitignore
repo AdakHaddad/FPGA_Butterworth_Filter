@@ -21,6 +21,7 @@
 #
 IP/*/*
 !IP/*/*.xci*
+*.pptx
 
 BD/*
 !BD/*.bd
