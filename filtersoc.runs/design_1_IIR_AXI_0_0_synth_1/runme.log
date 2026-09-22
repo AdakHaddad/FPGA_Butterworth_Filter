@@ -1,0 +1,493 @@
+
+*** Running vivado
+    with args -log design_1_IIR_AXI_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_IIR_AXI_0_0.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Sep 23 00:55:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_IIR_AXI_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1407.348 ; gain = 0.027 ; free physical = 8701 ; free virtual = 14774
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/muqtada/Documents/ip_repo/IIR_AXI_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/muqtada/Documents/filtersoc/ip_repo/I2S_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_IIR_AXI_0_0
+Command: synth_design -top design_1_IIR_AXI_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21672
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1917.742 ; gain = 419.828 ; free physical = 5787 ; free virtual = 11783
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_CLK', assumed default net type 'wire' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI_slave_lite_v1_0_S00_AXI.v:382]
+INFO: [Synth 8-6157] synthesizing module 'design_1_IIR_AXI_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_IIR_AXI_0_0/synth/design_1_IIR_AXI_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'IIR_AXI' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IIR_AXI_slave_lite_v1_0_S00_AXI' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI_slave_lite_v1_0_S00_AXI.v:151]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI_slave_lite_v1_0_S00_AXI.v:341]
+INFO: [Synth 8-6157] synthesizing module 'filter_coeff' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/src/filter_coeff.v:3]
+INFO: [Synth 8-6157] synthesizing module 'filter_biquad' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/src/filter_biquad.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'filter_biquad' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/src/filter_biquad.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'filter_coeff' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/src/filter_coeff.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'x_in' does not match port width (16) of module 'filter_coeff' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI_slave_lite_v1_0_S00_AXI.v:384]
+INFO: [Synth 8-6155] done synthesizing module 'IIR_AXI_slave_lite_v1_0_S00_AXI' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI_slave_lite_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-7071] port 'valid' of module 'IIR_AXI_slave_lite_v1_0_S00_AXI' is unconnected for instance 'IIR_AXI_slave_lite_v1_0_S00_AXI_inst' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI.v:53]
+WARNING: [Synth 8-7071] port 'sw' of module 'IIR_AXI_slave_lite_v1_0_S00_AXI' is unconnected for instance 'IIR_AXI_slave_lite_v1_0_S00_AXI_inst' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI.v:53]
+WARNING: [Synth 8-7071] port 'x_in' of module 'IIR_AXI_slave_lite_v1_0_S00_AXI' is unconnected for instance 'IIR_AXI_slave_lite_v1_0_S00_AXI_inst' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI.v:53]
+WARNING: [Synth 8-7071] port 'y_out' of module 'IIR_AXI_slave_lite_v1_0_S00_AXI' is unconnected for instance 'IIR_AXI_slave_lite_v1_0_S00_AXI_inst' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI.v:53]
+WARNING: [Synth 8-7023] instance 'IIR_AXI_slave_lite_v1_0_S00_AXI_inst' of module 'IIR_AXI_slave_lite_v1_0_S00_AXI' has 25 connections declared, but only 21 given [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'IIR_AXI' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_IIR_AXI_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_IIR_AXI_0_0/synth/design_1_IIR_AXI_0_0.v:53]
+WARNING: [Synth 8-3848] Net S_AXI_CLK in module/entity IIR_AXI_slave_lite_v1_0_S00_AXI does not have driver. [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI_slave_lite_v1_0_S00_AXI.v:382]
+WARNING: [Synth 8-3848] Net y_out in module/entity IIR_AXI does not have driver. [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ipshared/1572/hdl/IIR_AXI.v:21]
+WARNING: [Synth 8-7129] Port valid in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[15] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[14] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[13] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[12] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[11] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[10] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[9] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[8] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[7] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[6] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[5] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[4] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[3] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[2] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[1] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[0] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[15] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[14] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[13] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[12] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[11] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[10] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[9] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[8] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[7] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[6] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[5] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[4] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[3] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[2] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[1] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[0] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port valid in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[15] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[14] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[13] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[12] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[11] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[10] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[9] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[8] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[7] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[6] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[5] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[4] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[3] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[2] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[1] in module IIR_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[0] in module IIR_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1998.711 ; gain = 500.797 ; free physical = 5665 ; free virtual = 11666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2013.555 ; gain = 515.641 ; free physical = 5657 ; free virtual = 11657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2013.555 ; gain = 515.641 ; free physical = 5657 ; free virtual = 11657
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2013.555 ; gain = 0.000 ; free physical = 5656 ; free virtual = 11657
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2168.305 ; gain = 0.000 ; free physical = 5631 ; free virtual = 11655
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2168.305 ; gain = 0.000 ; free physical = 5630 ; free virtual = 11655
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2168.305 ; gain = 670.391 ; free physical = 6355 ; free virtual = 12398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2176.309 ; gain = 678.395 ; free physical = 6355 ; free virtual = 12398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2176.309 ; gain = 678.395 ; free physical = 6355 ; free virtual = 12398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'IIR_AXI_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'IIR_AXI_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'IIR_AXI_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'IIR_AXI_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 2176.309 ; gain = 678.395 ; free physical = 6172 ; free virtual = 12215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input   49 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               19 Bit    Registers := 8     
+	               16 Bit    Registers := 10    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	              19x37  Multipliers := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 11    
+	  12 Input   32 Bit        Muxes := 11    
+	   2 Input   16 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP stage1/mul_b0, operation Mode is: A2*B2.
+DSP Report: register b0_1_reg is absorbed into DSP stage1/mul_b0.
+DSP Report: register stage1/x_curr_reg is absorbed into DSP stage1/mul_b0.
+DSP Report: operator stage1/mul_b0 is absorbed into DSP stage1/mul_b0.
+DSP Report: Generating DSP stage1/acc_sum, operation Mode is: PCIN+A''*B2.
+DSP Report: register b2_1_reg is absorbed into DSP stage1/acc_sum.
+DSP Report: register stage1/acc_sum is absorbed into DSP stage1/acc_sum.
+DSP Report: register stage1/acc_sum is absorbed into DSP stage1/acc_sum.
+DSP Report: operator stage1/acc_sum is absorbed into DSP stage1/acc_sum.
+DSP Report: operator stage1/mul_b2 is absorbed into DSP stage1/acc_sum.
+DSP Report: Generating DSP stage1/acc_sum, operation Mode is: PCIN+A''*B2.
+DSP Report: register b1_1_reg is absorbed into DSP stage1/acc_sum.
+DSP Report: register stage1/acc_sum is absorbed into DSP stage1/acc_sum.
+DSP Report: register stage1/acc_sum is absorbed into DSP stage1/acc_sum.
+DSP Report: operator stage1/acc_sum is absorbed into DSP stage1/acc_sum.
+DSP Report: operator stage1/mul_b1 is absorbed into DSP stage1/acc_sum.
+DSP Report: Generating DSP stage1/mul_a2, operation Mode is: A''*B.
+DSP Report: register stage1/y_d1_reg is absorbed into DSP stage1/mul_a2.
+DSP Report: register stage1/y_d2_reg is absorbed into DSP stage1/mul_a2.
+DSP Report: operator stage1/mul_a2 is absorbed into DSP stage1/mul_a2.
+DSP Report: operator stage1/mul_a2 is absorbed into DSP stage1/mul_a2.
+DSP Report: Generating DSP stage1/mul_a2, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register stage1/y_d1_reg is absorbed into DSP stage1/mul_a2.
+DSP Report: register stage1/y_d2_reg is absorbed into DSP stage1/mul_a2.
+DSP Report: operator stage1/mul_a2 is absorbed into DSP stage1/mul_a2.
+DSP Report: operator stage1/mul_a2 is absorbed into DSP stage1/mul_a2.
+DSP Report: Generating DSP stage1/mul_a1, operation Mode is: A2*B.
+DSP Report: register stage1/y_d1_reg is absorbed into DSP stage1/mul_a1.
+DSP Report: operator stage1/mul_a1 is absorbed into DSP stage1/mul_a1.
+DSP Report: operator stage1/mul_a1 is absorbed into DSP stage1/mul_a1.
+DSP Report: Generating DSP stage1/mul_a1, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register stage1/y_d1_reg is absorbed into DSP stage1/mul_a1.
+DSP Report: operator stage1/mul_a1 is absorbed into DSP stage1/mul_a1.
+DSP Report: operator stage1/mul_a1 is absorbed into DSP stage1/mul_a1.
+DSP Report: Generating DSP stage1/acc_sum, operation Mode is: PCIN+A:B+C.
+DSP Report: operator stage1/acc_sum is absorbed into DSP stage1/acc_sum.
+DSP Report: Generating DSP stage2/mul_b0, operation Mode is: A2*B2.
+DSP Report: register b0_2_reg is absorbed into DSP stage2/mul_b0.
+DSP Report: register stage2/mul_b0 is absorbed into DSP stage2/mul_b0.
+DSP Report: operator stage2/mul_b0 is absorbed into DSP stage2/mul_b0.
+DSP Report: Generating DSP stage2/acc_sum, operation Mode is: C+A''*B2.
+DSP Report: register b2_2_reg is absorbed into DSP stage2/acc_sum.
+DSP Report: register stage2/acc_sum is absorbed into DSP stage2/acc_sum.
+DSP Report: register stage2/acc_sum is absorbed into DSP stage2/acc_sum.
+DSP Report: operator stage2/acc_sum is absorbed into DSP stage2/acc_sum.
+DSP Report: operator stage2/mul_b2 is absorbed into DSP stage2/acc_sum.
+DSP Report: Generating DSP stage2/acc_sum, operation Mode is: PCIN+A''*B2.
+DSP Report: register b1_2_reg is absorbed into DSP stage2/acc_sum.
+DSP Report: register stage2/acc_sum is absorbed into DSP stage2/acc_sum.
+DSP Report: register stage2/acc_sum is absorbed into DSP stage2/acc_sum.
+DSP Report: operator stage2/acc_sum is absorbed into DSP stage2/acc_sum.
+DSP Report: operator stage2/mul_b1 is absorbed into DSP stage2/acc_sum.
+DSP Report: Generating DSP stage2/mul_a2, operation Mode is: A''*B.
+DSP Report: register stage2/y_d1_reg is absorbed into DSP stage2/mul_a2.
+DSP Report: register stage2/y_d2_reg is absorbed into DSP stage2/mul_a2.
+DSP Report: operator stage2/mul_a2 is absorbed into DSP stage2/mul_a2.
+DSP Report: operator stage2/mul_a2 is absorbed into DSP stage2/mul_a2.
+DSP Report: Generating DSP stage2/mul_a2, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register stage2/y_d1_reg is absorbed into DSP stage2/mul_a2.
+DSP Report: register stage2/y_d2_reg is absorbed into DSP stage2/mul_a2.
+DSP Report: operator stage2/mul_a2 is absorbed into DSP stage2/mul_a2.
+DSP Report: operator stage2/mul_a2 is absorbed into DSP stage2/mul_a2.
+DSP Report: Generating DSP stage2/mul_a1, operation Mode is: A2*B.
+DSP Report: register stage2/y_d1_reg is absorbed into DSP stage2/mul_a1.
+DSP Report: operator stage2/mul_a1 is absorbed into DSP stage2/mul_a1.
+DSP Report: operator stage2/mul_a1 is absorbed into DSP stage2/mul_a1.
+DSP Report: Generating DSP stage2/mul_a1, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register stage2/y_d1_reg is absorbed into DSP stage2/mul_a1.
+DSP Report: operator stage2/mul_a1 is absorbed into DSP stage2/mul_a1.
+DSP Report: operator stage2/mul_a1 is absorbed into DSP stage2/mul_a1.
+DSP Report: Generating DSP stage2/acc_sum, operation Mode is: PCIN+A:B+C.
+DSP Report: operator stage2/acc_sum is absorbed into DSP stage2/acc_sum.
+WARNING: [Synth 8-7129] Port valid in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[15] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[14] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[13] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[12] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[11] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[10] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[9] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[8] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[7] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[6] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[5] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[4] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[3] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[2] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[1] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port x_in[0] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module IIR_AXI_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[15] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[14] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[13] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[12] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[11] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[10] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[9] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[8] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[7] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[6] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[5] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_out[4] in module design_1_IIR_AXI_0_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 2176.309 ; gain = 678.395 ; free physical = 5976 ; free virtual = 12156
+---------------------------------------------------------------------------------
+ Sort Area is  stage1/mul_b0_8 : 0 0 : 2067 6973 : Used 1 time 0
+ Sort Area is  stage1/mul_b0_8 : 0 1 : 2370 6973 : Used 1 time 0
+ Sort Area is  stage1/mul_b0_8 : 0 2 : 2276 6973 : Used 1 time 0
+ Sort Area is  stage1/mul_b0_8 : 0 3 : 260 6973 : Used 1 time 0
+ Sort Area is  stage1/mul_a2_7 : 0 0 : 3208 6081 : Used 1 time 0
+ Sort Area is  stage1/mul_a2_7 : 0 1 : 2873 6081 : Used 1 time 0
+ Sort Area is  stage2/mul_a2_3 : 0 0 : 3208 6081 : Used 1 time 0
+ Sort Area is  stage2/mul_a2_3 : 0 1 : 2873 6081 : Used 1 time 0
+ Sort Area is  stage1/mul_a1_6 : 0 0 : 3189 6043 : Used 1 time 0
+ Sort Area is  stage1/mul_a1_6 : 0 1 : 2854 6043 : Used 1 time 0
+ Sort Area is  stage2/mul_a1_0 : 0 0 : 3189 6043 : Used 1 time 0
+ Sort Area is  stage2/mul_a1_0 : 0 1 : 2854 6043 : Used 1 time 0
+ Sort Area is  stage2/acc_sum_f : 0 0 : 2370 5000 : Used 1 time 0
+ Sort Area is  stage2/acc_sum_f : 0 1 : 2370 5000 : Used 1 time 0
+ Sort Area is  stage2/acc_sum_f : 0 2 : 260 5000 : Used 1 time 0
+ Sort Area is  stage2/mul_b0_d : 0 0 : 2253 2253 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|filter_coeff | A2*B2            | 17     | 16     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | PCIN+A''*B2      | 19     | 16     | -      | -      | 33     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | PCIN+A''*B2      | 18     | 16     | -      | -      | 33     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | A''*B            | 19     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | (PCIN>>17)+A''*B | 19     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | A2*B             | 19     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | (PCIN>>17)+A2*B  | 19     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | PCIN+A:B+C       | 15     | 18     | 33     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|filter_coeff | A2*B2            | 19     | 16     | -      | -      | 35     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | C+A''*B2         | 19     | 16     | 33     | -      | 33     | 2    | 1    | 0    | -    | -     | 0    | 0    | 
+|filter_coeff | PCIN+A''*B2      | 19     | 16     | -      | -      | 33     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | A''*B            | 19     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | (PCIN>>17)+A''*B | 19     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | A2*B             | 19     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | (PCIN>>17)+A2*B  | 19     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_coeff | PCIN+A:B+C       | 15     | 18     | 33     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:10 . Memory (MB): peak = 2183.309 ; gain = 685.395 ; free physical = 5008 ; free virtual = 11219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:10 . Memory (MB): peak = 2183.309 ; gain = 685.395 ; free physical = 5006 ; free virtual = 11217
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:01:10 . Memory (MB): peak = 2194.332 ; gain = 696.418 ; free physical = 4988 ; free virtual = 11197
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 2363.145 ; gain = 865.230 ; free physical = 4748 ; free virtual = 11005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 2363.145 ; gain = 865.230 ; free physical = 4748 ; free virtual = 11005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 2363.145 ; gain = 865.230 ; free physical = 4745 ; free virtual = 11002
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 2363.145 ; gain = 865.230 ; free physical = 4745 ; free virtual = 11002
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 2363.145 ; gain = 865.230 ; free physical = 4745 ; free virtual = 11002
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 2363.145 ; gain = 865.230 ; free physical = 4744 ; free virtual = 11001
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     5|
+|4     |LUT4 |     1|
+|5     |LUT5 |    36|
+|6     |LUT6 |   145|
+|7     |FDRE |   369|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 2363.145 ; gain = 865.230 ; free physical = 4743 ; free virtual = 11000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 2363.145 ; gain = 710.480 ; free physical = 4742 ; free virtual = 11000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 2363.152 ; gain = 865.230 ; free physical = 4742 ; free virtual = 11000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2363.152 ; gain = 0.000 ; free physical = 4740 ; free virtual = 10998
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2387.156 ; gain = 0.000 ; free physical = 4931 ; free virtual = 11149
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9a715326
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 2387.156 ; gain = 979.809 ; free physical = 4934 ; free virtual = 11150
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1571.298; main = 1381.538; forked = 243.566
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3253.352; main = 2387.160; forked = 985.281
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2411.168 ; gain = 0.000 ; free physical = 4934 ; free virtual = 11149
+INFO: [Common 17-1381] The checkpoint '/home/muqtada/Documents/filtersoc/filtersoc.runs/design_1_IIR_AXI_0_0_synth_1/design_1_IIR_AXI_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_IIR_AXI_0_0, cache-ID = 63c79efce3e32ba3
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2411.168 ; gain = 0.000 ; free physical = 4923 ; free virtual = 11152
+INFO: [Common 17-1381] The checkpoint '/home/muqtada/Documents/filtersoc/filtersoc.runs/design_1_IIR_AXI_0_0_synth_1/design_1_IIR_AXI_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_IIR_AXI_0_0_utilization_synth.rpt -pb design_1_IIR_AXI_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 23 00:57:16 2026...
