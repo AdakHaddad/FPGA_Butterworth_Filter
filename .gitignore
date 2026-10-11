@@ -1,0 +1,34 @@
+# Vivado generated project data
+.Xil/
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.jou
+*.log
+*.str
+*.wdb
+*.wcfg
+
+# Generated hardware exports and programming/debug artifacts
+*.bit
+*.ltx
+*.bin
+*.mcs
+*.xsa
+*.hwh
+
+# Vitis and IDE workspace/build output
+.metadata/
+_ide/.wsdata/
+_ide/logs/
+build/
+export/
+Debug/
+Release/
+*.o
+*.d
+*.elf
+*.map
