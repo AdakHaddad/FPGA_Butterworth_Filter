@@ -47,11 +47,11 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: user.org:user:I2S:1.0
-// IP Revision: 2
+// IP VLNV: user.org:user:i2s:1.0
+// IP Revision: 1
 
-(* X_CORE_INFO = "I2S,Vivado 2024.2" *)
-(* CHECK_LICENSE_TYPE = "design_1_I2S_0_0,I2S,{}" *)
+(* X_CORE_INFO = "i2s,Vivado 2024.2" *)
+(* CHECK_LICENSE_TYPE = "design_1_I2S_0_0,i2s,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_I2S_0_0 (
   audio_clk,
@@ -142,7 +142,7 @@ output wire s00_axi_rvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *)
 input wire s00_axi_rready;
 
-  I2S #(
+  i2s #(
     .C_S00_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
     .C_S00_AXI_ADDR_WIDTH(4)  // Width of S_AXI address bus
   ) inst (

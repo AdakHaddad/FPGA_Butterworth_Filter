@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:IIR_AXI:1.0
-// IP Revision: 2
+// IP Revision: 9
 
 (* X_CORE_INFO = "IIR_AXI,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_IIR_AXI_0_0,IIR_AXI,{}" *)

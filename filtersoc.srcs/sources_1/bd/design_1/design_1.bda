@@ -256,7 +256,7 @@
                 "SX": "/I2S_0",
                 "SI": "S00_AXI",
                 "SS": "S00_AXI_reg",
-                "SV": "user.org:user:I2S:1.0",
+                "SV": "user.org:user:i2s:1.0",
                 "TM": "both",
                 "TU": "register"
             },

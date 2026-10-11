@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-//Date        : Wed Sep 23 00:54:55 2026
+//Date        : Sun Oct 11 12:54:38 2026
 //Host        : localhost.localdomain running 64-bit Ubuntu 24.04.5 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,11 +10,11 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=13,numNonXlnxBlks=2,numHierBlks=1,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=2,da_clkrst_cnt=1,da_microblaze_riscv_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=14,numNonXlnxBlks=2,numHierBlks=1,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=2,da_clkrst_cnt=1,da_microblaze_riscv_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (i2s_bclk,
     i2s_data,
-    i2s_mclk_0,
+    i2s_mclk,
     i2s_ws,
     reset,
     sys_clock,
@@ -22,7 +22,7 @@ module design_1
     usb_uart_txd);
   output i2s_bclk;
   output i2s_data;
-  output i2s_mclk_0;
+  output i2s_mclk;
   output i2s_ws;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN design_1_sys_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input sys_clock;
@@ -88,7 +88,7 @@ module design_1
   wire clk_wiz_0_locked;
   wire i2s_bclk;
   wire i2s_data;
-  wire i2s_mclk_0;
+  wire i2s_mclk;
   wire i2s_ws;
   wire mdm_1_debug_sys_rst;
   wire microblaze_riscv_0_Clk;
@@ -151,7 +151,7 @@ module design_1
        (.audio_clk(microblaze_riscv_0_Clk),
         .i2s_bclk(i2s_bclk),
         .i2s_data(i2s_data),
-        .i2s_mclk(i2s_mclk_0),
+        .i2s_mclk(i2s_mclk),
         .i2s_ws(i2s_ws),
         .pcm_in(IIR_AXI_0_y_out),
         .s00_axi_aclk(microblaze_riscv_0_Clk),
@@ -305,6 +305,11 @@ module design_1
         .clk_out1(microblaze_riscv_0_Clk),
         .locked(clk_wiz_0_locked),
         .reset(reset));
+  design_1_ila_0_0 ila_0
+       (.clk(microblaze_riscv_0_Clk),
+        .probe0(IIR_AXI_0_y_out),
+        .probe1(IIR_AXI_0_y_out),
+        .probe2(i2s_data));
   design_1_mdm_1_0 mdm_1
        (.Dbg_Capture_0(microblaze_riscv_0_debug_CAPTURE),
         .Dbg_Clk_0(microblaze_riscv_0_debug_CLK),

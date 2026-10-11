@@ -1,0 +1,912 @@
+TRACE::2026-09-23.20:11:03::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:03::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:03::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:04::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:04::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:04::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:04::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-09-23.20:11:04::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2026-09-23.20:11:04::SCWWriter::formatted JSON is {
+	"platformName":	"filtersoc_platform",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"filtersoc_platform",
+	"platHandOff":	"/home/muqtada/Documents/filtersoc/design_1_wrapper2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2026-09-23.20:11:04::SCWWriter::formatted JSON is {
+	"platformName":	"filtersoc_platform",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"filtersoc_platform",
+	"platHandOff":	"/home/muqtada/Documents/filtersoc/design_1_wrapper2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"filtersoc_platform",
+	"systems":	[{
+			"systemName":	"filtersoc_platform",
+			"systemDesc":	"filtersoc_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"filtersoc_platform"
+		}]
+}
+TRACE::2026-09-23.20:11:04::SCWPlatform::Boot application domains not present, creating them
+TRACE::2026-09-23.20:11:04::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2026-09-23.20:11:04::SCWWriter::formatted JSON is {
+	"platformName":	"filtersoc_platform",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"filtersoc_platform",
+	"platHandOff":	"/home/muqtada/Documents/filtersoc/design_1_wrapper2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"filtersoc_platform",
+	"systems":	[{
+			"systemName":	"filtersoc_platform",
+			"systemDesc":	"filtersoc_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"filtersoc_platform"
+		}]
+}
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:15::SCWDomain::checking for install qemu data   : 
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:15::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:15::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:15::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-09-23.20:11:15::SCWMssOS::No sw design opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:15::SCWMssOS::mss does not exists at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:15::SCWMssOS::Creating sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:15::SCWMssOS::Adding the swdes entry, created swdb /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss with des name /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:15::SCWMssOS::updating the scw layer changes to swdes at   /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:15::SCWMssOS::Writing mss at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:15::SCWMssOS::Completed writing the mss file at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp
+TRACE::2026-09-23.20:11:15::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2026-09-23.20:11:15::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2026-09-23.20:11:15::SCWMssOS::Completed writing the mss file at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp
+TRACE::2026-09-23.20:11:15::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2026-09-23.20:11:16::SCWMssOS::Saving the mss changes /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::Adding the swdes entry, mss present, able to open swdb /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2026-09-23.20:11:16::SCWMssOS::Writing the mss file completed /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::Commit changes completed.
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWWriter::formatted JSON is {
+	"platformName":	"filtersoc_platform",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"filtersoc_platform",
+	"platHandOff":	"/home/muqtada/Documents/filtersoc/design_1_wrapper2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"filtersoc_platform",
+	"systems":	[{
+			"systemName":	"filtersoc_platform",
+			"systemDesc":	"filtersoc_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"filtersoc_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_riscv_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"afec9e41af5e7018df40f1c16674be63",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-09-23.20:11:16::SCWPlatform::Started generating the artifacts platform filtersoc_platform
+TRACE::2026-09-23.20:11:16::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-09-23.20:11:16::SCWPlatform::Started generating the artifacts for system configuration filtersoc_platform
+LOG::2026-09-23.20:11:16::SCWSystem::Checking the domain standalone_domain
+LOG::2026-09-23.20:11:16::SCWSystem::Not a boot domain 
+LOG::2026-09-23.20:11:16::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2026-09-23.20:11:16::SCWDomain::Generating domain artifcats
+TRACE::2026-09-23.20:11:16::SCWMssOS::Generating standalone artifcats
+TRACE::2026-09-23.20:11:16::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::Completed writing the mss file at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp
+TRACE::2026-09-23.20:11:16::SCWMssOS::Mss edits present, copying mssfile into export location /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-09-23.20:11:16::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-09-23.20:11:16::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2026-09-23.20:11:16::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-09-23.20:11:16::SCWMssOS::Copying to export directory.
+TRACE::2026-09-23.20:11:16::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-09-23.20:11:16::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-09-23.20:11:16::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2026-09-23.20:11:16::SCWSystem::Completed Processing the sysconfig filtersoc_platform
+LOG::2026-09-23.20:11:16::SCWPlatform::Completed generating the artifacts for system configuration filtersoc_platform
+TRACE::2026-09-23.20:11:16::SCWPlatform::Started preparing the platform 
+TRACE::2026-09-23.20:11:16::SCWSystem::Writing the bif file for system config filtersoc_platform
+TRACE::2026-09-23.20:11:16::SCWSystem::dir created 
+TRACE::2026-09-23.20:11:16::SCWSystem::Writing the bif 
+TRACE::2026-09-23.20:11:16::SCWPlatform::Started writing the spfm file 
+TRACE::2026-09-23.20:11:16::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-09-23.20:11:16::SCWPlatform::Completed generating the platform
+TRACE::2026-09-23.20:11:16::SCWMssOS::Saving the mss changes /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-09-23.20:11:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-09-23.20:11:16::SCWMssOS::Commit changes completed.
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWWriter::formatted JSON is {
+	"platformName":	"filtersoc_platform",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"filtersoc_platform",
+	"platHandOff":	"/home/muqtada/Documents/filtersoc/design_1_wrapper2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"filtersoc_platform",
+	"systems":	[{
+			"systemName":	"filtersoc_platform",
+			"systemDesc":	"filtersoc_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"filtersoc_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_riscv_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"afec9e41af5e7018df40f1c16674be63",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-09-23.20:11:16::SCWPlatform::updated the xpfm file.
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::Saving the mss changes /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-09-23.20:11:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-09-23.20:11:16::SCWMssOS::Commit changes completed.
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWWriter::formatted JSON is {
+	"platformName":	"filtersoc_platform",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"filtersoc_platform",
+	"platHandOff":	"/home/muqtada/Documents/filtersoc/design_1_wrapper2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"filtersoc_platform",
+	"systems":	[{
+			"systemName":	"filtersoc_platform",
+			"systemDesc":	"filtersoc_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"filtersoc_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_riscv_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"afec9e41af5e7018df40f1c16674be63",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::Saving the mss changes /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-09-23.20:11:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-09-23.20:11:16::SCWMssOS::Commit changes completed.
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:16::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:16::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:16::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:16::SCWWriter::formatted JSON is {
+	"platformName":	"filtersoc_platform",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"filtersoc_platform",
+	"platHandOff":	"/home/muqtada/Documents/filtersoc/design_1_wrapper2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"filtersoc_platform",
+	"systems":	[{
+			"systemName":	"filtersoc_platform",
+			"systemDesc":	"filtersoc_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"filtersoc_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_riscv_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_riscv_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"afec9e41af5e7018df40f1c16674be63",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-09-23.20:11:18::SCWPlatform::Started generating the artifacts platform filtersoc_platform
+TRACE::2026-09-23.20:11:18::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-09-23.20:11:18::SCWPlatform::Started generating the artifacts for system configuration filtersoc_platform
+LOG::2026-09-23.20:11:18::SCWSystem::Checking the domain standalone_domain
+LOG::2026-09-23.20:11:18::SCWSystem::Not a boot domain 
+LOG::2026-09-23.20:11:18::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2026-09-23.20:11:18::SCWDomain::Generating domain artifcats
+TRACE::2026-09-23.20:11:18::SCWMssOS::Generating standalone artifcats
+TRACE::2026-09-23.20:11:18::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-09-23.20:11:18::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:18::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:18::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:18::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:18::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:18::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:18::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:18::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:18::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:18::SCWMssOS::Completed writing the mss file at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp
+TRACE::2026-09-23.20:11:18::SCWMssOS::Mss edits present, copying mssfile into export location /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:18::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-09-23.20:11:18::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-09-23.20:11:18::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2026-09-23.20:11:18::SCWMssOS::doing bsp build ... 
+TRACE::2026-09-23.20:11:18::SCWMssOS::System Command Ran  cd  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp ; bash -c "make  " 
+TRACE::2026-09-23.20:11:18::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/bram_v4_11/src
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::make -C microblaze_riscv_0/libsrc/bram_v4_11/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=riscv
+TRACE::2026-09-23.20:11:18::SCWMssOS::64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections 
+TRACE::2026-09-23.20:11:18::SCWMssOS::-fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/cpu_riscv_v1_1/src
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::make -C microblaze_riscv_0/libsrc/cpu_riscv_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=r
+TRACE::2026-09-23.20:11:18::SCWMssOS::iscv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-secti
+TRACE::2026-09-23.20:11:18::SCWMssOS::ons -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/I2S_v1_0/src
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::make -C microblaze_riscv_0/libsrc/I2S_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=riscv64
+TRACE::2026-09-23.20:11:18::SCWMssOS::-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections -f
+TRACE::2026-09-23.20:11:18::SCWMssOS::data-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/IIR_AXI_v1_0/src
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::make -C microblaze_riscv_0/libsrc/IIR_AXI_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=ris
+TRACE::2026-09-23.20:11:18::SCWMssOS::cv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-section
+TRACE::2026-09-23.20:11:18::SCWMssOS::s -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/standalone_v9_2/src
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::make -C microblaze_riscv_0/libsrc/standalone_v9_2/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=
+TRACE::2026-09-23.20:11:18::SCWMssOS::riscv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sect
+TRACE::2026-09-23.20:11:18::SCWMssOS::ions -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/uartlite_v3_11/src
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::make -C microblaze_riscv_0/libsrc/uartlite_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=r
+TRACE::2026-09-23.20:11:18::SCWMssOS::iscv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-secti
+TRACE::2026-09-23.20:11:18::SCWMssOS::ons -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Running Make libs in microblaze_riscv_0/libsrc/IIR_AXI_v1_0/src
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::make -C microblaze_riscv_0/libsrc/IIR_AXI_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=riscv6
+TRACE::2026-09-23.20:11:18::SCWMssOS::4-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections -
+TRACE::2026-09-23.20:11:18::SCWMssOS::fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Compiling IIR_AXI...
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Running Make libs in microblaze_riscv_0/libsrc/I2S_v1_0/src
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::make -C microblaze_riscv_0/libsrc/I2S_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=riscv64-un
+TRACE::2026-09-23.20:11:18::SCWMssOS::known-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdat
+TRACE::2026-09-23.20:11:18::SCWMssOS::a-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:18::SCWMssOS::Compiling I2S...
+
+TRACE::2026-09-23.20:11:19::SCWMssOS::Running Make libs in microblaze_riscv_0/libsrc/standalone_v9_2/src
+
+TRACE::2026-09-23.20:11:19::SCWMssOS::make -C microblaze_riscv_0/libsrc/standalone_v9_2/src -s libs  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=ris
+TRACE::2026-09-23.20:11:19::SCWMssOS::cv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-section
+TRACE::2026-09-23.20:11:19::SCWMssOS::s -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:19::SCWMssOS::Compiling standalone
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Finished building libraries sequentially.
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -j 2 --no-print-directory par_libs
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/bram_v4_11/src
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -C microblaze_riscv_0/libsrc/bram_v4_11/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=riscv
+TRACE::2026-09-23.20:11:22::SCWMssOS::64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections 
+TRACE::2026-09-23.20:11:22::SCWMssOS::-fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/cpu_riscv_v1_1/src
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -C microblaze_riscv_0/libsrc/cpu_riscv_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=r
+TRACE::2026-09-23.20:11:22::SCWMssOS::iscv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-secti
+TRACE::2026-09-23.20:11:22::SCWMssOS::ons -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/IIR_AXI_v1_0/src
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -C microblaze_riscv_0/libsrc/IIR_AXI_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=ris
+TRACE::2026-09-23.20:11:22::SCWMssOS::cv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-section
+TRACE::2026-09-23.20:11:22::SCWMssOS::s -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/I2S_v1_0/src
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -C microblaze_riscv_0/libsrc/I2S_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=riscv64
+TRACE::2026-09-23.20:11:22::SCWMssOS::-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections -f
+TRACE::2026-09-23.20:11:22::SCWMssOS::data-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/standalone_v9_2/src
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -C microblaze_riscv_0/libsrc/standalone_v9_2/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=
+TRACE::2026-09-23.20:11:22::SCWMssOS::riscv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sect
+TRACE::2026-09-23.20:11:22::SCWMssOS::ions -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Running Make include in microblaze_riscv_0/libsrc/uartlite_v3_11/src
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -C microblaze_riscv_0/libsrc/uartlite_v3_11/src -s include  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=r
+TRACE::2026-09-23.20:11:22::SCWMssOS::iscv64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-secti
+TRACE::2026-09-23.20:11:22::SCWMssOS::ons -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Running Make libs in microblaze_riscv_0/libsrc/bram_v4_11/src
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::Running Make libs in microblaze_riscv_0/libsrc/cpu_riscv_v1_1/src
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -C microblaze_riscv_0/libsrc/bram_v4_11/src -s libs  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=riscv64-
+TRACE::2026-09-23.20:11:22::SCWMssOS::unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fd
+TRACE::2026-09-23.20:11:22::SCWMssOS::ata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:22::SCWMssOS::make -C microblaze_riscv_0/libsrc/cpu_riscv_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=risc
+TRACE::2026-09-23.20:11:22::SCWMssOS::v64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections
+TRACE::2026-09-23.20:11:22::SCWMssOS:: -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:23::SCWMssOS::Running Make libs in microblaze_riscv_0/libsrc/uartlite_v3_11/src
+
+TRACE::2026-09-23.20:11:23::SCWMssOS::make -C microblaze_riscv_0/libsrc/uartlite_v3_11/src -s libs  "SHELL=/bin/sh" "COMPILER=riscv64-unknown-elf-gcc" "ARCHIVER=risc
+TRACE::2026-09-23.20:11:23::SCWMssOS::v64-unknown-elf-ar" "COMPILER_FLAGS=  -O2 -c -mabi=ilp32 -march=rv32i_zicsr_zifencei" "EXTRA_COMPILER_FLAGS=-ffunction-sections
+TRACE::2026-09-23.20:11:23::SCWMssOS:: -fdata-sections -Wall -Wextra"
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::Finished building libraries parallelly.
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::make --no-print-directory archive
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::riscv64-unknown-elf-ar -r  microblaze_riscv_0/lib/libxil.a microblaze_riscv_0/lib/xbram.o microblaze_riscv_0/lib/xbram_g.o micr
+TRACE::2026-09-23.20:11:24::SCWMssOS::oblaze_riscv_0/lib/xbram_intr.o microblaze_riscv_0/lib/xbram_selftest.o microblaze_riscv_0/lib/xbram_sinit.o microblaze_riscv_0
+TRACE::2026-09-23.20:11:24::SCWMssOS::/lib/xio.o microblaze_riscv_0/lib/xuartlite.o microblaze_riscv_0/lib/xuartlite_g.o microblaze_riscv_0/lib/xuartlite_intr.o micr
+TRACE::2026-09-23.20:11:24::SCWMssOS::oblaze_riscv_0/lib/xuartlite_l.o microblaze_riscv_0/lib/xuartlite_selftest.o microblaze_riscv_0/lib/xuartlite_sinit.o microblaz
+TRACE::2026-09-23.20:11:24::SCWMssOS::e_riscv_0/lib/xuartlite_stats.o
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::Finished building libraries
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::Copying to export directory.
+TRACE::2026-09-23.20:11:24::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-09-23.20:11:24::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-09-23.20:11:24::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2026-09-23.20:11:24::SCWSystem::Completed Processing the sysconfig filtersoc_platform
+LOG::2026-09-23.20:11:24::SCWPlatform::Completed generating the artifacts for system configuration filtersoc_platform
+TRACE::2026-09-23.20:11:24::SCWPlatform::Started preparing the platform 
+TRACE::2026-09-23.20:11:24::SCWSystem::Writing the bif file for system config filtersoc_platform
+TRACE::2026-09-23.20:11:24::SCWSystem::dir created 
+TRACE::2026-09-23.20:11:24::SCWSystem::Writing the bif 
+TRACE::2026-09-23.20:11:24::SCWPlatform::Started writing the spfm file 
+TRACE::2026-09-23.20:11:24::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-09-23.20:11:24::SCWPlatform::Completed generating the platform
+TRACE::2026-09-23.20:11:24::SCWMssOS::Saving the mss changes /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-09-23.20:11:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-09-23.20:11:24::SCWMssOS::Commit changes completed.
+TRACE::2026-09-23.20:11:24::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:24::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:24::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:24::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:24::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:24::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:24::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:24::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:24::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:24::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:24::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:24::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:24::SCWWriter::formatted JSON is {
+	"platformName":	"filtersoc_platform",
+	"sprVersion":	"2.0",
+	"mode":	"cmd",
+	"dsaType":	"Fixed",
+	"platformDesc":	"filtersoc_platform",
+	"platHandOff":	"/home/muqtada/Documents/filtersoc/design_1_wrapper2.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper2.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"filtersoc_platform",
+	"systems":	[{
+			"systemName":	"filtersoc_platform",
+			"systemDesc":	"filtersoc_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"filtersoc_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_riscv_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_riscv_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"afec9e41af5e7018df40f1c16674be63",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-09-23.20:11:24::SCWPlatform::updated the xpfm file.
+TRACE::2026-09-23.20:11:24::SCWPlatform::Trying to open the hw design at /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA given /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA absoulate path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform::DSA directory /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw
+TRACE::2026-09-23.20:11:24::SCWPlatform:: Platform Path /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/hw/design_1_wrapper2.xsa
+TRACE::2026-09-23.20:11:24::SCWPlatform:: Unique name xilinx:basys3::0.0
+TRACE::2026-09-23.20:11:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2026-09-23.20:11:24::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2026-09-23.20:11:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-09-23.20:11:24::SCWMssOS::Checking the sw design at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss
+TRACE::2026-09-23.20:11:24::SCWMssOS::DEBUG:  swdes dump  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2026-09-23.20:11:24::SCWMssOS::Sw design exists and opened at  /home/muqtada/Documents/filtersoc/ws/filtersoc_platform/microblaze_riscv_0/standalone_domain/bsp/system.mss

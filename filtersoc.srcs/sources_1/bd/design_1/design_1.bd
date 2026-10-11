@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x663DD5667E7664AD",
+      "boundary_crc": "0x861E9E07C92A355C",
       "device": "xc7a35tcpg236-1",
       "gen_directory": "../../../../filtersoc.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -25,7 +25,8 @@
       "axi_uartlite_0": "",
       "axi_smc": "",
       "IIR_AXI_0": "",
-      "I2S_0": ""
+      "I2S_0": "",
+      "ila_0": ""
     },
     "interface_ports": {
       "usb_uart": {
@@ -91,7 +92,7 @@
       "i2s_bclk": {
         "direction": "O"
       },
-      "i2s_mclk_0": {
+      "i2s_mclk": {
         "direction": "O"
       }
     },
@@ -495,17 +496,41 @@
       },
       "IIR_AXI_0": {
         "vlnv": "user.org:user:IIR_AXI:1.0",
-        "ip_revision": "2",
+        "ip_revision": "9",
         "xci_name": "design_1_IIR_AXI_0_0",
         "xci_path": "ip/design_1_IIR_AXI_0_0/design_1_IIR_AXI_0_0.xci",
         "inst_hier_path": "IIR_AXI_0"
       },
       "I2S_0": {
-        "vlnv": "user.org:user:I2S:1.0",
-        "ip_revision": "2",
+        "vlnv": "user.org:user:i2s:1.0",
+        "ip_revision": "1",
         "xci_name": "design_1_I2S_0_0",
         "xci_path": "ip/design_1_I2S_0_0/design_1_I2S_0_0.xci",
         "inst_hier_path": "I2S_0"
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "16",
+        "xci_name": "design_1_ila_0_0",
+        "xci_path": "ip/design_1_ila_0_0/design_1_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "ALL_PROBE_SAME_MU": {
+            "value": "true"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "3"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "16"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -568,13 +593,14 @@
       "I2S_0_i2s_data": {
         "ports": [
           "I2S_0/i2s_data",
-          "i2s_data"
+          "i2s_data",
+          "ila_0/probe2"
         ]
       },
       "I2S_0_i2s_mclk": {
         "ports": [
           "I2S_0/i2s_mclk",
-          "i2s_mclk_0"
+          "i2s_mclk"
         ]
       },
       "I2S_0_i2s_ws": {
@@ -586,7 +612,9 @@
       "IIR_AXI_0_y_out": {
         "ports": [
           "IIR_AXI_0/y_out",
-          "I2S_0/pcm_in"
+          "I2S_0/pcm_in",
+          "ila_0/probe0",
+          "ila_0/probe1"
         ]
       },
       "clk_wiz_0_locked": {
@@ -611,7 +639,8 @@
           "axi_uartlite_0/s_axi_aclk",
           "I2S_0/audio_clk",
           "I2S_0/s00_axi_aclk",
-          "IIR_AXI_0/s00_axi_aclk"
+          "IIR_AXI_0/s00_axi_aclk",
+          "ila_0/clk"
         ]
       },
       "reset_1": {

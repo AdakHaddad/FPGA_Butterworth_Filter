@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "design_1_IIR_AXI_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
+set_param bd.open.in_stealth_mode 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -72,10 +74,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {/home/muqtada/.Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_repo_paths {
-  /home/muqtada/Documents/ip_repo/IIR_AXI_1_0
-  /home/muqtada/Documents/filtersoc/ip_repo/I2S_1_0
-} [current_project]
+set_property ip_repo_paths /home/muqtada/Documents/filtersoc/ip_repo [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/muqtada/Documents/filtersoc/filtersoc.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

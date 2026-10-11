@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:IIR_AXI:1.0
-// IP Revision: 2
+// IP Revision: 9
 
 `timescale 1ns/1ps
 

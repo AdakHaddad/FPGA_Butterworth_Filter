@@ -1,0 +1,9 @@
+I2S_0:
+- i2s
+- None
+IIR_AXI_0:
+- IIR_AXI
+- None
+axi_uartlite_0:
+- axi_uartlite
+- uartlite

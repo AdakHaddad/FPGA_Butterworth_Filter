@@ -1,0 +1,7 @@
+13:11:14 DEBUG : Logs will be stored at '/home/muqtada/Documents/filtersoc/ws/IDE.log'.
+13:11:14 INFO  : Registering command handlers for Vitis TCF services
+13:11:15 INFO  : Platform repository initialization has completed.
+13:11:16 INFO  : Result from executing command 'getProjects': filtersoc_platform
+13:11:16 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202420_1|/tools/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|/tools/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|/tools/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+13:11:24 INFO  : Result from executing command 'getProjects': filtersoc_platform
+13:11:24 INFO  : Result from executing command 'getPlatforms': filtersoc_platform|/home/muqtada/Documents/filtersoc/ws/filtersoc_platform/export/filtersoc_platform/filtersoc_platform.xpfm;xilinx_zcu102_base_202420_1|/tools/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|/tools/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|/tools/Xilinx/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm

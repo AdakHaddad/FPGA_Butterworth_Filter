@@ -1,0 +1,53 @@
+$date
+        2026-Oct-11 17:29:20
+$end
+$version
+        Vivado v2024.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 16 " design_1_i/IIR_AXI_0_y_out_1 [15:0] $end
+$var reg 16 2 design_1_i/IIR_AXI_0_y_out [15:0] $end
+$var reg 1 B design_1_i/i2s_data $end
+$var reg 1 C _TRIGGER $end
+$var reg 1 D _WINDOW $end
+$var reg 1 E _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001010001010111 "
+b1001010001010111 2
+0B
+0C
+1D
+0E
+$end
+#333
+1B
+#365
+0B
+#431
+1B
+#463
+0B
+#496
+1B
+#512
+1C
+#528
+0B
+#626
+1B
+#658
+0B
+#691
+1B
+#724
+0B
+#756
+1B
+#854
+0B
