@@ -3,8 +3,8 @@
   "type": "PLATFORM",
   "configuration": {
     "description": "",
-    "xsa": "/home/muqtada/Documents/filtersoc/design_1_wrappercod.xsa",
-    "xsaPathInPlatform": "platform/hw/design_1_wrappercod.xsa",
+    "xsa": "/home/muqtada/Documents/filtersoc/design_1_wrapperilagi.xsa",
+    "xsaPathInPlatform": "platform/hw/design_1_wrapperilagi.xsa",
     "emulationXsa": "",
     "emulationXsaPathInPlatform": "",
     "isCustomFSBL": false,

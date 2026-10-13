@@ -2265,3 +2265,21 @@ selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_COR
 // TclEventType: WAVEFORM_MODEL_EVENT
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// Elapsed time: 352 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // d (PAResourceOtoP.PAViews_DASHBOARD, PlanAheadTabhw_ila_1)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE

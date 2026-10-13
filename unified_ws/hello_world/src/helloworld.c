@@ -197,47 +197,6 @@ static const int16_t SINE[SINE_TABLE_SIZE] = {
 static const int16_t filter_coefficients
     [AXI_FILTER_COEFF_BANK_COUNT]
     [AXI_FILTER_COEFF_COUNT] = {
-
-//     {
-//       0,      0,      0, -30835, 14517,
-//   16384,  32767,  16384, -31899, 15584
-// },
-
-// {
-//       0,      0,      0, -29719, 13498,
-//   16384,  32767,  16384, -31335, 15124
-// },
-
-// {
-//       0,      1,      0, -28992, 12858,
-//   16384,  32767,  16384, -30942, 14825
-// },
-
-// {
-//   15041, -30082,  15041, -30835, 14517,
-//   16384, -32768,  16384, -31899, 15584
-// },
-
-// {
-//   14288, -28576,  14288, -29719, 13498,
-//   16384, -32768,  16384, -31335, 15124
-// },
-
-// {
-//   13806, -27613,  13806, -28992, 12858,
-//   16384, -32768,  16384, -30942, 14825
-// },
-
-// {
-//      17,     34,     17, -31621, 15464,
-//   16384, -32768,  16384, -32125, 15824
-// },
-
-// {
-//   15643, -31152,  15643, -31621, 15464,
-//   16384, -32628,  16384, -32125, 15824
-// }
-
 {
        7,     14,      7, -24243,  9107,
    16384,  32767,  16384, -27869, 12919
@@ -739,43 +698,27 @@ static void handle_key(uint8_t ch)
         case 'v':
             print_diagnostic();
             break;
-
-        /* Filter bank 0 */
         case 'a':
             set_filter_bank(0U);
             break;
-
-        /* Filter bank 1 */
         case 'b':
             set_filter_bank(1U);
             break;
-
-        /* Filter bank 2 */
         case 'c':
             set_filter_bank(2U);
             break;
-
-        /* Filter bank 3 */
         case 'd':
             set_filter_bank(3U);
             break;
-
-        /* Filter bank 4 */
         case 'z':
             set_filter_bank(4U);
             break;
-
-        /* Filter bank 5 */
         case 'f':
             set_filter_bank(5U);
             break;
-
-        /* Filter bank 6 */
         case 'g':
             set_filter_bank(6U);
             break;
-
-        /* Filter bank 7 */
         case 'h':
             set_filter_bank(7U);
             break;

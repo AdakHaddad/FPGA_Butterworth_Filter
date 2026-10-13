@@ -106,252 +106,300 @@ build install/strip: phony CMakeFiles/install/strip.util
 # /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/CMakeLists.txt
 # =============================================================================
 
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target xiltimer
+
+#############################################
+# Utility command for combined
+
+build libsrc/combined: phony libsrc/CMakeFiles/combined libsrc/uartlite/src/libuartlite.a
 
 
 #############################################
-# Order-only phony target for xiltimer
+# Utility command for edit_cache
 
-build cmake_object_order_depends_target_xiltimer: phony || libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
+build libsrc/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
 
-build libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer/microblaze_riscv_sleep.c.obj: C_COMPILER__xiltimer_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/default_timer/microblaze_riscv_sleep.c || cmake_object_order_depends_target_xiltimer
-  DEP_FILE = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer/microblaze_riscv_sleep.c.obj.d
-  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
-  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
-  OBJECT_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
-  OBJECT_FILE_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer
-
-build libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/xiltimer.c.obj: C_COMPILER__xiltimer_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xiltimer.c || cmake_object_order_depends_target_xiltimer
-  DEP_FILE = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/xiltimer.c.obj.d
-  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
-  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
-  OBJECT_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
-  OBJECT_FILE_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target xiltimer
+build libsrc/edit_cache: phony libsrc/CMakeFiles/edit_cache.util
 
 
 #############################################
-# Link the static library libsrc/xiltimer/src/libxiltimer.a
+# Utility command for rebuild_cache
 
-build libsrc/xiltimer/src/libxiltimer.a: C_STATIC_LIBRARY_LINKER__xiltimer_ libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer/microblaze_riscv_sleep.c.obj libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/xiltimer.c.obj
+build libsrc/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libsrc/rebuild_cache: phony libsrc/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libsrc/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libsrc/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libsrc/install: phony libsrc/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libsrc/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libsrc/install/local: phony libsrc/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libsrc/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libsrc/install/strip: phony libsrc/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for libsrc/CMakeFiles/combined
+
+build libsrc/CMakeFiles/combined | ${cmake_ninja_workdir}libsrc/CMakeFiles/combined: CUSTOM_COMMAND libsrc/uartlite/src/libuartlite.a || libsrc/uartlite/src/libuartlite.a
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp && riscv64-unknown-elf-ar -M</home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libxil.mri && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -E copy /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libxil.a /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/lib
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build libsrc/common/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build libsrc/common/src/edit_cache: phony libsrc/common/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libsrc/common/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libsrc/common/src/rebuild_cache: phony libsrc/common/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libsrc/common/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libsrc/common/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/common/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libsrc/common/src/install: phony libsrc/common/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libsrc/common/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/common/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libsrc/common/src/install/local: phony libsrc/common/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libsrc/common/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/common/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libsrc/common/src/install/strip: phony libsrc/common/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target uartlite
+
+
+#############################################
+# Order-only phony target for uartlite
+
+build cmake_object_order_depends_target_uartlite: phony || libsrc/uartlite/src/CMakeFiles/uartlite.dir
+
+build libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite.c.obj: C_COMPILER__uartlite_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/xuartlite.c || cmake_object_order_depends_target_uartlite
+  DEP_FILE = libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+  OBJECT_FILE_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+
+build libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_g.c.obj: C_COMPILER__uartlite_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/xuartlite_g.c || cmake_object_order_depends_target_uartlite
+  DEP_FILE = libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_g.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+  OBJECT_FILE_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+
+build libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_intr.c.obj: C_COMPILER__uartlite_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/xuartlite_intr.c || cmake_object_order_depends_target_uartlite
+  DEP_FILE = libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_intr.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+  OBJECT_FILE_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+
+build libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_l.c.obj: C_COMPILER__uartlite_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/xuartlite_l.c || cmake_object_order_depends_target_uartlite
+  DEP_FILE = libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_l.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+  OBJECT_FILE_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+
+build libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_selftest.c.obj: C_COMPILER__uartlite_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/xuartlite_selftest.c || cmake_object_order_depends_target_uartlite
+  DEP_FILE = libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_selftest.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+  OBJECT_FILE_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+
+build libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_sinit.c.obj: C_COMPILER__uartlite_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/xuartlite_sinit.c || cmake_object_order_depends_target_uartlite
+  DEP_FILE = libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_sinit.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+  OBJECT_FILE_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+
+build libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_stats.c.obj: C_COMPILER__uartlite_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/xuartlite_stats.c || cmake_object_order_depends_target_uartlite
+  DEP_FILE = libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_stats.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+  OBJECT_FILE_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target uartlite
+
+
+#############################################
+# Link the static library libsrc/uartlite/src/libuartlite.a
+
+build libsrc/uartlite/src/libuartlite.a: C_STATIC_LIBRARY_LINKER__uartlite_ libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite.c.obj libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_g.c.obj libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_intr.c.obj libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_l.c.obj libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_selftest.c.obj libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_sinit.c.obj libsrc/uartlite/src/CMakeFiles/uartlite.dir/xuartlite_stats.c.obj
   LANGUAGE_COMPILE_FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include
-  OBJECT_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
+  OBJECT_DIR = libsrc/uartlite/src/CMakeFiles/uartlite.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libsrc/xiltimer/src/libxiltimer.a
-  TARGET_PDB = xiltimer.a.dbg
+  TARGET_FILE = libsrc/uartlite/src/libuartlite.a
+  TARGET_PDB = uartlite.a.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build libsrc/xiltimer/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+build libsrc/uartlite/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build libsrc/xiltimer/src/edit_cache: phony libsrc/xiltimer/src/CMakeFiles/edit_cache.util
+build libsrc/uartlite/src/edit_cache: phony libsrc/uartlite/src/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build libsrc/xiltimer/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+build libsrc/uartlite/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build libsrc/xiltimer/src/rebuild_cache: phony libsrc/xiltimer/src/CMakeFiles/rebuild_cache.util
+build libsrc/uartlite/src/rebuild_cache: phony libsrc/uartlite/src/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build libsrc/xiltimer/src/list_install_components: phony
+build libsrc/uartlite/src/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build libsrc/xiltimer/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/xiltimer/src/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+build libsrc/uartlite/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/uartlite/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
 
-build libsrc/xiltimer/src/install: phony libsrc/xiltimer/src/CMakeFiles/install.util
+build libsrc/uartlite/src/install: phony libsrc/uartlite/src/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build libsrc/xiltimer/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/xiltimer/src/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+build libsrc/uartlite/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/uartlite/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build libsrc/xiltimer/src/install/local: phony libsrc/xiltimer/src/CMakeFiles/install/local.util
+build libsrc/uartlite/src/install/local: phony libsrc/uartlite/src/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build libsrc/xiltimer/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/xiltimer/src/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+build libsrc/uartlite/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/uartlite/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build libsrc/xiltimer/src/install/strip: phony libsrc/xiltimer/src/CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build libsrc/xiltimer/src/core/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
-  DESC = Running CMake cache editor...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/edit_cache: phony libsrc/xiltimer/src/core/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build libsrc/xiltimer/src/core/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/rebuild_cache: phony libsrc/xiltimer/src/core/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build libsrc/xiltimer/src/core/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build libsrc/xiltimer/src/core/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/install: phony libsrc/xiltimer/src/core/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build libsrc/xiltimer/src/core/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/install/local: phony libsrc/xiltimer/src/core/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build libsrc/xiltimer/src/core/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/install/strip: phony libsrc/xiltimer/src/core/CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build libsrc/xiltimer/src/core/default_timer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
-  DESC = Running CMake cache editor...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/default_timer/edit_cache: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build libsrc/xiltimer/src/core/default_timer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/default_timer/rebuild_cache: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build libsrc/xiltimer/src/core/default_timer/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build libsrc/xiltimer/src/core/default_timer/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/default_timer/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/default_timer/install: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/default_timer/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/default_timer/install/local: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/default_timer/all
-  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build libsrc/xiltimer/src/core/default_timer/install/strip: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/strip.util
+build libsrc/uartlite/src/install/strip: phony libsrc/uartlite/src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -929,11 +977,269 @@ build libsrc/standalone/src/riscv/CMakeFiles/install/strip.util: CUSTOM_COMMAND 
 build libsrc/standalone/src/riscv/install/strip: phony libsrc/standalone/src/riscv/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target xiltimer
+
+
+#############################################
+# Order-only phony target for xiltimer
+
+build cmake_object_order_depends_target_xiltimer: phony || libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
+
+build libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer/microblaze_riscv_sleep.c.obj: C_COMPILER__xiltimer_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/default_timer/microblaze_riscv_sleep.c || cmake_object_order_depends_target_xiltimer
+  DEP_FILE = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer/microblaze_riscv_sleep.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
+  OBJECT_FILE_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer
+
+build libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/xiltimer.c.obj: C_COMPILER__xiltimer_ /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xiltimer.c || cmake_object_order_depends_target_xiltimer
+  DEP_FILE = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/xiltimer.c.obj.d
+  FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include   -c  -g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns "-D__FILENAME__=\"\$$(subst /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/,,\$$(abspath \$$<))\""
+  INCLUDES = -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/include -isystem /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/x86_64-oesdk-linux/usr/lib/riscv32-xilinx-elf/gcc/riscv32-xilinx-elf/13.3.0/include-fixed -isystem /tools/Xilinx/Vitis/2024.2/gnu/riscv/lin/riscv64-unknown-elf/riscv32-xilinx-elf/usr/include
+  OBJECT_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
+  OBJECT_FILE_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target xiltimer
+
+
+#############################################
+# Link the static library libsrc/xiltimer/src/libxiltimer.a
+
+build libsrc/xiltimer/src/libxiltimer.a: C_STATIC_LIBRARY_LINKER__xiltimer_ libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer/microblaze_riscv_sleep.c.obj libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/xiltimer.c.obj
+  LANGUAGE_COMPILE_FLAGS = -O2 -march=rv32i_zicsr_zifencei -mabi=ilp32 -DSDT  -MMD -MP  -specs=/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Xilinx.spec -I/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/include
+  OBJECT_DIR = libsrc/xiltimer/src/CMakeFiles/xiltimer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libsrc/xiltimer/src/libxiltimer.a
+  TARGET_PDB = xiltimer.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build libsrc/xiltimer/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/edit_cache: phony libsrc/xiltimer/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libsrc/xiltimer/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/rebuild_cache: phony libsrc/xiltimer/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libsrc/xiltimer/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libsrc/xiltimer/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/xiltimer/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/install: phony libsrc/xiltimer/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libsrc/xiltimer/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/xiltimer/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/install/local: phony libsrc/xiltimer/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libsrc/xiltimer/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/xiltimer/src/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/install/strip: phony libsrc/xiltimer/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build libsrc/xiltimer/src/core/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/edit_cache: phony libsrc/xiltimer/src/core/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libsrc/xiltimer/src/core/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/rebuild_cache: phony libsrc/xiltimer/src/core/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libsrc/xiltimer/src/core/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libsrc/xiltimer/src/core/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/install: phony libsrc/xiltimer/src/core/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libsrc/xiltimer/src/core/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/install/local: phony libsrc/xiltimer/src/core/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libsrc/xiltimer/src/core/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/install/strip: phony libsrc/xiltimer/src/core/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build libsrc/xiltimer/src/core/default_timer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/default_timer/edit_cache: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libsrc/xiltimer/src/core/default_timer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp -B/home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/default_timer/rebuild_cache: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libsrc/xiltimer/src/core/default_timer/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libsrc/xiltimer/src/core/default_timer/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/default_timer/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/default_timer/install: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/default_timer/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/default_timer/install/local: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/xiltimer/src/core/default_timer/all
+  COMMAND = cd /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer && /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libsrc/xiltimer/src/core/default_timer/install/strip: phony libsrc/xiltimer/src/core/default_timer/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
+
+build combined: phony libsrc/combined
+
+build libuartlite.a: phony libsrc/uartlite/src/libuartlite.a
 
 build libxilstandalone.a: phony libsrc/standalone/src/libxilstandalone.a
 
 build libxiltimer.a: phony libsrc/xiltimer/src/libxiltimer.a
+
+build uartlite: phony libsrc/uartlite/src/libuartlite.a
 
 build xilstandalone: phony libsrc/standalone/src/libxilstandalone.a
 
@@ -947,7 +1253,21 @@ build xiltimer: phony libsrc/xiltimer/src/libxiltimer.a
 #############################################
 # Folder: /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp
 
-build all: phony libsrc/xiltimer/src/all libsrc/standalone/src/all
+build all: phony libsrc/all libsrc/standalone/src/all libsrc/xiltimer/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc
+
+build libsrc/all: phony libsrc/combined libsrc/common/src/all libsrc/uartlite/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src
+
+build libsrc/common/src/all: phony
 
 # =============================================================================
 
@@ -980,6 +1300,13 @@ build libsrc/standalone/src/riscv/all: phony
 # =============================================================================
 
 #############################################
+# Folder: /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src
+
+build libsrc/uartlite/src/all: phony libsrc/uartlite/src/libuartlite.a
+
+# =============================================================================
+
+#############################################
 # Folder: /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src
 
 build libsrc/xiltimer/src/all: phony libsrc/xiltimer/src/libxiltimer.a libsrc/xiltimer/src/core/all
@@ -1005,14 +1332,14 @@ build libsrc/xiltimer/src/core/default_timer/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Findcommon.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Findcommonmeta.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/MemConfig.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/bspconfig.h.in /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/StandaloneExample.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/intr/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/riscv/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/xilstandalone.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/XiltimerExample.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xiltimer.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xtimer_config.h.in /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/microblaze_riscv_toolchain.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Findcommon.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Findcommonmeta.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/DRVLISTConfig.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/common/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/MemConfig.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/bspconfig.h.in /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/StandaloneExample.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/intr/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/riscv/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/xilstandalone.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/XiltimerExample.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xiltimer.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xtimer_config.h.in /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/microblaze_riscv_toolchain.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Findcommon.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Findcommonmeta.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/MemConfig.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/bspconfig.h.in /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/StandaloneExample.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/intr/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/riscv/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/xilstandalone.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/XiltimerExample.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xiltimer.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xtimer_config.h.in /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/microblaze_riscv_toolchain.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Findcommon.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/Findcommonmeta.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/DRVLISTConfig.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/common/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/MemConfig.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/bspconfig.h.in /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/StandaloneExample.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/common/intr/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/riscv/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/standalone/src/xilstandalone.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/uartlite/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/XiltimerExample.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xiltimer.cmake /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/libsrc/xiltimer/src/xtimer_config.h.in /home/muqtada/Documents/filtersoc/unified_ws/platform/microblaze_riscv_0/standalone_microblaze_riscv_0/bsp/microblaze_riscv_toolchain.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake /tools/Xilinx/Vitis/2024.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################

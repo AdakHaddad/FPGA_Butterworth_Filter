@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Oct 11 12:58:22 2026
-# Process ID         : 57937
+# Start of session at: Mon Oct 12 20:27:19 2026
+# Process ID         : 19928
 # Current directory  : /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2
 # Command line       : vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file           : /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/design_1_wrapper.vds
@@ -13,16 +13,15 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.5 LTS
 # Processor Detail   : Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
-# CPU Frequency      : 2600.024 MHz
+# CPU Frequency      : 2925.432 MHz
 # CPU Physical cores : 2
 # CPU Logical cores  : 4
-# Host memory        : 24931 MB
+# Host memory        : 24932 MB
 # Swap memory        : 0 MB
-# Total Virtual      : 24931 MB
-# Available Virtual  : 11614 MB
+# Total Virtual      : 24932 MB
+# Available Virtual  : 15903 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1433.984 ; gain = 0.027 ; free physical = 2330 ; free virtual = 10735
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/muqtada/Documents/filtersoc/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
@@ -38,57 +37,57 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 58010
+INFO: [Synth 8-7075] Helper process launched with PID 19995
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1979.105 ; gain = 417.766 ; free physical = 1867 ; free virtual = 10267
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1979.203 ; gain = 419.828 ; free physical = 7849 ; free virtual = 14135
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_I2S_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_I2S_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_I2S_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_I2S_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_IIR_AXI_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_IIR_AXI_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_IIR_AXI_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_IIR_AXI_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_I2S_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_I2S_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_I2S_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_I2S_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_IIR_AXI_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_IIR_AXI_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_IIR_AXI_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_IIR_AXI_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_axi_smc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:204]
 WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:204]
 WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 78 connections declared, but only 76 given [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:204]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_axi_uartlite_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:281]
 WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:281]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_clk_wiz_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_clk_wiz_0_0_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:308]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_microblaze_riscv_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_microblaze_riscv_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_riscv_0_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_microblaze_riscv_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_riscv_0_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_microblaze_riscv_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_riscv_0_0' is unconnected for instance 'microblaze_riscv_0' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:326]
 WARNING: [Synth 8-7023] instance 'microblaze_riscv_0' of module 'design_1_microblaze_riscv_0_0' has 52 connections declared, but only 51 given [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:326]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_riscv_0_local_memory_imp_1TUIWYR' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:411]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_dlmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:536]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:536]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_ilmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:582]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:582]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_lmb_bram_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:607]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:607]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:607]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_riscv_0_local_memory_imp_1TUIWYR' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:411]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-57937-localhost.localdomain/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (0#1) [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/.Xil/Vivado-19928-localhost.localdomain/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:400]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:400]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 8 given [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:400]
@@ -99,18 +98,18 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'I2S_0'. This will prevent further optimization [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v:150]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'design_1_i'. This will prevent further optimization [/home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:40]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2058.043 ; gain = 496.703 ; free physical = 1765 ; free virtual = 10166
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2058.141 ; gain = 498.766 ; free physical = 7761 ; free virtual = 14049
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2072.887 ; gain = 511.547 ; free physical = 1765 ; free virtual = 10166
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2072.984 ; gain = 513.609 ; free physical = 7769 ; free virtual = 14057
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2072.887 ; gain = 511.547 ; free physical = 1765 ; free virtual = 10166
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2072.984 ; gain = 513.609 ; free physical = 7769 ; free virtual = 14057
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2072.887 ; gain = 0.000 ; free physical = 1765 ; free virtual = 10166
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2072.984 ; gain = 0.000 ; free physical = 7769 ; free virtual = 14057
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -175,23 +174,23 @@ Parsing XDC File [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_
 Finished Parsing XDC File [/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2145.824 ; gain = 0.000 ; free physical = 1758 ; free virtual = 10160
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2145.922 ; gain = 0.000 ; free physical = 7774 ; free virtual = 14063
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2145.824 ; gain = 0.000 ; free physical = 1758 ; free virtual = 10160
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2145.922 ; gain = 0.000 ; free physical = 7774 ; free virtual = 14062
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_riscv_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2145.824 ; gain = 584.484 ; free physical = 1760 ; free virtual = 10158
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2145.922 ; gain = 586.547 ; free physical = 7750 ; free virtual = 14041
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2153.828 ; gain = 592.488 ; free physical = 1760 ; free virtual = 10158
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2153.926 ; gain = 594.551 ; free physical = 7750 ; free virtual = 14041
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -214,10 +213,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/IIR_AXI_0. (constraint
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/I2S_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ila_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2153.828 ; gain = 592.488 ; free physical = 1760 ; free virtual = 10158
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2153.926 ; gain = 594.551 ; free physical = 7750 ; free virtual = 14041
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2153.828 ; gain = 592.488 ; free physical = 1756 ; free virtual = 10155
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2153.926 ; gain = 594.551 ; free physical = 7750 ; free virtual = 14041
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -240,25 +239,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2153.828 ; gain = 592.488 ; free physical = 1769 ; free virtual = 10169
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2153.926 ; gain = 594.551 ; free physical = 7759 ; free virtual = 14055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2225.828 ; gain = 664.488 ; free physical = 1705 ; free virtual = 10113
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2223.926 ; gain = 664.551 ; free physical = 7874 ; free virtual = 14017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2225.828 ; gain = 664.488 ; free physical = 1705 ; free virtual = 10113
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2223.926 ; gain = 664.551 ; free physical = 7874 ; free virtual = 14017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2235.844 ; gain = 674.504 ; free physical = 1697 ; free virtual = 10105
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2233.941 ; gain = 674.566 ; free physical = 7858 ; free virtual = 14002
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -276,37 +275,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2405.656 ; gain = 844.316 ; free physical = 1564 ; free virtual = 9959
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2403.754 ; gain = 844.379 ; free physical = 7721 ; free virtual = 13865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2405.656 ; gain = 844.316 ; free physical = 1564 ; free virtual = 9959
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2403.754 ; gain = 844.379 ; free physical = 7721 ; free virtual = 13865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2405.656 ; gain = 844.316 ; free physical = 1564 ; free virtual = 9959
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2403.754 ; gain = 844.379 ; free physical = 7721 ; free virtual = 13865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2405.656 ; gain = 844.316 ; free physical = 1564 ; free virtual = 9959
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2403.754 ; gain = 844.379 ; free physical = 7721 ; free virtual = 13865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2405.656 ; gain = 844.316 ; free physical = 1564 ; free virtual = 9959
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2403.754 ; gain = 844.379 ; free physical = 7721 ; free virtual = 13865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2405.656 ; gain = 844.316 ; free physical = 1564 ; free virtual = 9959
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2403.754 ; gain = 844.379 ; free physical = 7721 ; free virtual = 13865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -354,16 +353,16 @@ Report Cell Usage:
 |16    |OBUF                        |     5|
 +------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2405.656 ; gain = 844.316 ; free physical = 1564 ; free virtual = 9959
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2403.754 ; gain = 844.379 ; free physical = 7721 ; free virtual = 13865
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 2405.656 ; gain = 771.379 ; free physical = 1564 ; free virtual = 9959
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 2405.664 ; gain = 844.316 ; free physical = 1564 ; free virtual = 9959
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2403.754 ; gain = 771.441 ; free physical = 7721 ; free virtual = 13865
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2403.762 ; gain = 844.379 ; free physical = 7721 ; free virtual = 13865
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2405.664 ; gain = 0.000 ; free physical = 1612 ; free virtual = 10006
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2403.762 ; gain = 0.000 ; free physical = 7877 ; free virtual = 14021
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2405.664 ; gain = 0.000 ; free physical = 1621 ; free virtual = 10015
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2403.762 ; gain = 0.000 ; free physical = 7899 ; free virtual = 14044
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -371,10 +370,10 @@ Synth Design complete | Checksum: 5533f3c6
 INFO: [Common 17-83] Releasing license: Synthesis
 60 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:55 . Memory (MB): peak = 2405.664 ; gain = 971.680 ; free physical = 1621 ; free virtual = 10015
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1760.177; main = 1599.399; forked = 265.049
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3246.883; main = 2405.660; forked = 917.035
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2429.668 ; gain = 0.000 ; free physical = 1621 ; free virtual = 10015
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:44 . Memory (MB): peak = 2403.762 ; gain = 969.773 ; free physical = 7899 ; free virtual = 14044
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1711.482; main = 1615.430; forked = 267.646
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3176.980; main = 2403.758; forked = 917.035
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2427.766 ; gain = 0.000 ; free physical = 7899 ; free virtual = 14044
 INFO: [Common 17-1381] The checkpoint '/home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 12:59:34 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 20:28:16 2026...

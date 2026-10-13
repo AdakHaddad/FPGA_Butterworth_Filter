@@ -19,13 +19,13 @@
 			},
 			"pathMap": [],
 			"targetSetup": {
-				"resetSystem": false,
+				"resetSystem": true,
 				"programDevice": false,
 				"bitstreamFile": "${workspaceFolder}/hello_world/_ide/bitstream/design_1_wrapper2.bit",
 				"downloadElf": [
 					{
 						"core": "microblaze_riscv_0",
-						"resetProcessor": false,
+						"resetProcessor": true,
 						"elfFile": "${workspaceFolder}/hello_world/build/hello_world.elf",
 						"stopAtEntry": false
 					}

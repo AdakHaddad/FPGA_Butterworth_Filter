@@ -1046,11 +1046,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Oct 11 05:54:52 UTC 2026</spirit:value>
+            <spirit:value>Mon Oct 12 13:25:14 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:af9d9ad9</spirit:value>
+            <spirit:value>9:3107e874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1061,7 +1061,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:af9d9ad9</spirit:value>
+            <spirit:value>9:3107e874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1075,11 +1075,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Oct 11 05:58:15 UTC 2026</spirit:value>
+            <spirit:value>Mon Oct 12 13:27:07 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:af9d9ad9</spirit:value>
+            <spirit:value>9:3107e874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1094,11 +1094,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Oct 11 05:54:52 UTC 2026</spirit:value>
+            <spirit:value>Mon Oct 12 13:25:14 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:af9d9ad9</spirit:value>
+            <spirit:value>9:3107e874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1112,11 +1112,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Oct 11 05:54:52 UTC 2026</spirit:value>
+            <spirit:value>Mon Oct 12 13:25:14 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:af9d9ad9</spirit:value>
+            <spirit:value>9:3107e874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1132,11 +1132,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Oct 11 05:54:52 UTC 2026</spirit:value>
+            <spirit:value>Mon Oct 12 13:25:14 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ccd1777</spirit:value>
+            <spirit:value>9:091875d5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1152,11 +1152,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Oct 11 05:54:52 UTC 2026</spirit:value>
+            <spirit:value>Mon Oct 12 13:25:14 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:af9d9ad9</spirit:value>
+            <spirit:value>9:3107e874</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -74830,7 +74830,7 @@
     <spirit:parameter>
       <spirit:name>ALL_PROBE_SAME_MU</spirit:name>
       <spirit:displayName>Same Number of Comparators for all Probes</spirit:displayName>
-      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.ALL_PROBE_SAME_MU" spirit:order="10300" spirit:configGroups="1 UnGrouped">true</spirit:value>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.ALL_PROBE_SAME_MU" spirit:order="10300" spirit:configGroups="1 UnGrouped">TRUE</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -74981,7 +74981,6 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXI.SUPPORTS_NARROW_BURST" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_0_AXI.WUSER_WIDTH" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.ALL_PROBE_SAME_MU" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ILA_CLK_FREQ" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_MONITOR_TYPE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_NUM_OF_PROBES" xilinx:valueSource="user"/>

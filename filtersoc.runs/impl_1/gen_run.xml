@@ -133,16 +133,16 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_riscv_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_IIR_AXI_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_mdm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_I2S_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_riscv_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_0"/>
 </GenRun>

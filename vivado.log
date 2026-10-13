@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Oct 11 08:32:32 2026
-# Process ID         : 12568
+# Start of session at: Mon Oct 12 19:48:14 2026
+# Process ID         : 3639
 # Current directory  : /home/muqtada/Documents/filtersoc
 # Command line       : vivado
 # Log file           : /home/muqtada/Documents/filtersoc/vivado.log
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.5 LTS
 # Processor Detail   : Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
-# CPU Frequency      : 2899.682 MHz
+# CPU Frequency      : 2974.570 MHz
 # CPU Physical cores : 2
 # CPU Logical cores  : 4
-# Host memory        : 24931 MB
+# Host memory        : 24932 MB
 # Swap memory        : 0 MB
-# Total Virtual      : 24931 MB
-# Available Virtual  : 17040 MB
+# Total Virtual      : 24932 MB
+# Available Virtual  : 23821 MB
 #-----------------------------------------------------------
 start_gui
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
@@ -32,49 +32,77 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/muqtada/Documents/filtersoc/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
 INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
-open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 8000.434 ; gain = 538.195 ; free physical = 9266 ; free virtual = 15828
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 8047.406 ; gain = 583.602 ; free physical = 16177 ; free virtual = 19600
 update_compile_order -fileset sources_1
+open_bd_design {/home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:microblaze_riscv:1.0 - microblaze_riscv_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:mdm_riscv:1.0 - mdm_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- user.org:user:IIR_AXI:1.0 - IIR_AXI_0
+Adding component instance block -- user.org:user:i2s:1.0 - I2S_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: AMD recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Successfully read diagram <design_1> from block design file </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 8219.484 ; gain = 0.000 ; free physical = 13658 ; free virtual = 17536
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+delete_bd_objs [get_bd_cells ila_0]
+save_bd_design
+Wrote  : </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
 reset_run synth_1_copy_2
 INFO: [Project 1-1161] Replacing file /home/muqtada/Documents/filtersoc/filtersoc.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/design_1_wrapper.dcp
 launch_runs impl_3 -to_step write_bitstream -jobs 4
-[Sun Oct 11 08:42:11 2026] Launched synth_1_copy_2...
-Run output will be captured here: /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/runme.log
-[Sun Oct 11 08:42:11 2026] Launched impl_3...
-Run output will be captured here: /home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/runme.log
-open_run impl_3
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.32 . Memory (MB): peak = 8184.414 ; gain = 0.000 ; free physical = 9072 ; free virtual = 15706
-INFO: [Netlist 29-17] Analyzing 262 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8282.133 ; gain = 1.000 ; free physical = 8959 ; free virtual = 15594
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8859.449 ; gain = 10.000 ; free physical = 8421 ; free virtual = 15078
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8859.449 ; gain = 0.000 ; free physical = 8421 ; free virtual = 15078
-Read PlaceDB: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.44 . Memory (MB): peak = 8859.449 ; gain = 0.000 ; free physical = 8420 ; free virtual = 15080
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8859.449 ; gain = 0.000 ; free physical = 8420 ; free virtual = 15080
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.14 . Memory (MB): peak = 8859.449 ; gain = 0.000 ; free physical = 8420 ; free virtual = 15080
-Read Physdb Files: Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.62 . Memory (MB): peak = 8859.449 ; gain = 10.000 ; free physical = 8420 ; free virtual = 15080
-Restored from archive | CPU: 0.790000 secs | Memory: 7.400024 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.62 . Memory (MB): peak = 8859.449 ; gain = 10.000 ; free physical = 8420 ; free virtual = 15080
-Generating merged BMM file for the design top 'design_1_wrapper'...
-INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_0/data/riscv_bootloop.elf 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8859.449 ; gain = 0.000 ; free physical = 8404 ; free virtual = 15072
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 63 instances were transformed.
-  LUT6_2 => LUT6_2 (LUT5, LUT6): 47 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in Low-Area Mode.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:microblaze_riscv:1.0-9] /microblaze_riscv_0: Setting C_BASE_VECTORS to 0x00000000.
+INFO: [xilinx.com:ip:microblaze_riscv:1.0-23] /microblaze_riscv_0: Setting C_PC_WIDTH to 17.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/IIR_AXI_0/valid
+/IIR_AXI_0/sw
+/IIR_AXI_0/x_in
 
-open_run: Time (s): cpu = 00:01:02 ; elapsed = 00:00:39 . Memory (MB): peak = 9191.762 ; gain = 1049.246 ; free physical = 8076 ; free virtual = 14761
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Wrote  : </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd> 
+Verilog Output written to : /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Hardware Definition File /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_smc_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 116ccaad316e276a to dir: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/muqtada/Documents/filtersoc/filtersoc.cache/ip/2024.2/1/1/116ccaad316e276a/design_1_axi_smc_0_sim_netlist.vhdl to /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/muqtada/Documents/filtersoc/filtersoc.cache/ip/2024.2/1/1/116ccaad316e276a/design_1_axi_smc_0_stub.v to /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/muqtada/Documents/filtersoc/filtersoc.cache/ip/2024.2/1/1/116ccaad316e276a/design_1_axi_smc_0_sim_netlist.v to /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/muqtada/Documents/filtersoc/filtersoc.cache/ip/2024.2/1/1/116ccaad316e276a/design_1_axi_smc_0_stub.vhdl to /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/muqtada/Documents/filtersoc/filtersoc.cache/ip/2024.2/1/1/116ccaad316e276a/design_1_axi_smc_0.dcp to /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 116ccaad316e276a; cache size = 36.712 MB.
+[Mon Oct 12 19:56:50 2026] Launched synth_1_copy_2...
+Run output will be captured here: /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/runme.log
+[Mon Oct 12 19:56:50 2026] Launched impl_3...
+Run output will be captured here: /home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/runme.log
+launch_runs: Time (s): cpu = 00:00:51 ; elapsed = 00:00:45 . Memory (MB): peak = 8889.621 ; gain = 658.883 ; free physical = 11319 ; free virtual = 16109
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -99,51 +127,9 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 9223.004 ; gain = 0.000 ; free physical = 7015 ; free virtual = 14045
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB4071A
-set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-write_hw_platform -fixed -include_bit -force -file /home/muqtada/Documents/filtersoc/design_1_wrappercod.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: /home/muqtada/Documents/filtersoc/design_1_wrappercod.xsa ...
-WARNING: [Project 1-645] Board images not set in Hardware Platform.
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: /home/muqtada/Documents/filtersoc/design_1_wrappercod.xsa
-INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vivado/2024.2/data/embeddedsw) loading 1 seconds
-write_hw_platform: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 9404.562 ; gain = 146.469 ; free physical = 4168 ; free virtual = 12116
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB4071A
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2024.2.0
-  ****** Build date   : Oct 31 2024-01:19:07
-    **** Build number : 2024.2.1730312347
-      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
-      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 9404.562 ; gain = 0.000 ; free physical = 3915 ; free virtual = 11971
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
 set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
@@ -151,62 +137,51 @@ program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+write_hw_platform -fixed -include_bit -force -file /home/muqtada/Documents/filtersoc/design_1_wrappernoila.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: /home/muqtada/Documents/filtersoc/design_1_wrappernoila.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: /home/muqtada/Documents/filtersoc/design_1_wrappernoila.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vivado/2024.2/data/embeddedsw) loading 0 seconds
 open_bd_design {/home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd}
-Reading block design file </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd>...
-Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
-Adding component instance block -- xilinx.com:ip:microblaze_riscv:1.0 - microblaze_riscv_0
-Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
-Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
-Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
-Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
-Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
-Adding component instance block -- xilinx.com:ip:mdm_riscv:1.0 - mdm_1
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
-Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
-Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
-Adding component instance block -- user.org:user:IIR_AXI:1.0 - IIR_AXI_0
-Adding component instance block -- user.org:user:i2s:1.0 - I2S_0
-Successfully read diagram <design_1> from block design file </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 9404.562 ; gain = 0.000 ; free physical = 3792 ; free virtual = 11944
 startgroup
 create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
 INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: AMD recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
 endgroup
 WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
-startgroup
 set_property -dict [list \
-  CONFIG.ALL_PROBE_SAME_MU {true} \
   CONFIG.C_MONITOR_TYPE {Native} \
   CONFIG.C_NUM_OF_PROBES {3} \
   CONFIG.C_PROBE0_WIDTH {16} \
   CONFIG.C_PROBE1_WIDTH {16} \
 ] [get_bd_cells ila_0]
-endgroup
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins IIR_AXI_0/y_out]
+delete_bd_objs [get_bd_nets IIR_AXI_0_y_out]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins IIR_AXI_0/y_out] [get_bd_pins I2S_0/pcm_in]
+set_property location {3 836 83} [get_bd_cells ila_0]
 connect_bd_net [get_bd_pins ila_0/probe0] [get_bd_pins IIR_AXI_0/y_out]
-connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins IIR_AXI_0/y_out]
+connect_bd_net [get_bd_pins IIR_AXI_0/y_out] [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins ila_0/probe2] [get_bd_pins rst_clk_wiz_0_100M/peripheral_aresetn]
+disconnect_bd_net /rst_clk_wiz_0_100M_peripheral_aresetn [get_bd_pins ila_0/probe2]
 connect_bd_net [get_bd_pins ila_0/probe2] [get_bd_pins I2S_0/i2s_data]
-validate_bd_design
+disconnect_bd_net /IIR_AXI_0_y_out [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins I2S_0/i2s_data]
+disconnect_bd_net /I2S_0_i2s_data [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins IIR_AXI_0/y_out]
+disconnect_bd_net /IIR_AXI_0_y_out [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins ila_0/probe1] [get_bd_pins IIR_AXI_0/y_out]
+save_bd_design
+Wrote  : </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1_copy_2
+INFO: [Project 1-1161] Replacing file /home/muqtada/Documents/filtersoc/filtersoc.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/design_1_wrapper.dcp
+launch_runs impl_3 -to_step write_bitstream -jobs 4
 INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
 INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
 INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
 INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in Low-Area Mode.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
 WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
 INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
 INFO: [xilinx.com:ip:microblaze_riscv:1.0-9] /microblaze_riscv_0: Setting C_BASE_VECTORS to 0x00000000.
@@ -217,22 +192,7 @@ Please check your design and connect them as needed:
 /IIR_AXI_0/sw
 /IIR_AXI_0/x_in
 
-validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 9647.875 ; gain = 0.000 ; free physical = 3696 ; free virtual = 11857
-save_bd_design
 Wrote  : </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-reset_run synth_1_copy_2
-INFO: [Project 1-1161] Replacing file /home/muqtada/Documents/filtersoc/filtersoc.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/design_1_wrapper.dcp
-launch_runs impl_3 -to_step write_bitstream -jobs 4
-INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
-WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
-WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
-CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
-Please check your design and connect them as needed: 
-/IIR_AXI_0/valid
-/IIR_AXI_0/sw
-/IIR_AXI_0/x_in
-
 Verilog Output written to : /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/synth/design_1.v
 Verilog Output written to : /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/sim/design_1.v
 Verilog Output written to : /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
@@ -259,53 +219,138 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/muqtada/Documents/filt
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_stub.vhdl
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/muqtada/Documents/filtersoc/filtersoc.cache/ip/2024.2/1/1/116ccaad316e276a/design_1_axi_smc_0.dcp to /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp.
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 116ccaad316e276a; cache size = 27.296 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_smc_0, cache-ID = 116ccaad316e276a; cache size = 36.712 MB.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ila_0_0
-[Sun Oct 11 12:55:04 2026] Launched design_1_ila_0_0_synth_1, synth_1_copy_2...
+[Mon Oct 12 20:25:22 2026] Launched design_1_ila_0_0_synth_1, synth_1_copy_2...
 Run output will be captured here:
 design_1_ila_0_0_synth_1: /home/muqtada/Documents/filtersoc/filtersoc.runs/design_1_ila_0_0_synth_1/runme.log
 synth_1_copy_2: /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/runme.log
-[Sun Oct 11 12:55:05 2026] Launched impl_3...
+[Mon Oct 12 20:25:22 2026] Launched impl_3...
 Run output will be captured here: /home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/runme.log
-launch_runs: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 10217.969 ; gain = 557.777 ; free physical = 3549 ; free virtual = 11774
-reset_run synth_1_copy_2
-launch_runs impl_3 -to_step write_bitstream -jobs 4
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ila_0_0
-[Sun Oct 11 12:55:13 2026] Launched design_1_ila_0_0_synth_1, synth_1_copy_2...
-Run output will be captured here:
-design_1_ila_0_0_synth_1: /home/muqtada/Documents/filtersoc/filtersoc.runs/design_1_ila_0_0_synth_1/runme.log
-synth_1_copy_2: /home/muqtada/Documents/filtersoc/filtersoc.runs/synth_1_copy_2/runme.log
-[Sun Oct 11 12:55:14 2026] Launched impl_3...
-Run output will be captured here: /home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/runme.log
-create_ip_run [get_files -of_objects [get_fileset sources_1] /home/muqtada/Documents/filtersoc/filtersoc.srcs/sources_1/bd/design_1/design_1.bd]
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:00.34 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3240 ; free virtual = 11156
+launch_runs: Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 9426.387 ; gain = 388.023 ; free physical = 9301 ; free virtual = 15347
+set_property PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-12 20:34:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-12 20:34:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+write_hw_platform -fixed -include_bit -force -file /home/muqtada/Documents/filtersoc/design_1_wrapperilagi.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: /home/muqtada/Documents/filtersoc/design_1_wrapperilagi.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: /home/muqtada/Documents/filtersoc/design_1_wrapperilagi.xsa
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-12 20:39:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-12 20:39:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-12 20:39:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-12 20:39:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-12 20:39:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-12 20:39:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-12 20:49:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-12 20:49:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-12 20:49:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-12 20:49:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_run impl_3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 9426.387 ; gain = 0.000 ; free physical = 7087 ; free virtual = 14068
 INFO: [Netlist 29-17] Analyzing 351 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2024.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3277 ; free virtual = 11177
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9521.086 ; gain = 1.000 ; free physical = 6954 ; free virtual = 13934
 INFO: [Timing 38-478] Restoring timing data from binary archive.
 INFO: [Timing 38-479] Binary timing data restore complete.
 INFO: [Project 1-856] Restoring constraints from binary archive.
 INFO: [Project 1-853] Binary constraint restore complete.
 INFO: [Designutils 20-5722] Start Reading Physical Databases.
 Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3417 ; free virtual = 11316
+Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10085.434 ; gain = 0.000 ; free physical = 6432 ; free virtual = 13491
 Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3417 ; free virtual = 11316
-Read PlaceDB: Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.47 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3415 ; free virtual = 11316
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3415 ; free virtual = 11316
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10085.434 ; gain = 0.000 ; free physical = 6432 ; free virtual = 13491
+Read PlaceDB: Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.52 . Memory (MB): peak = 10095.434 ; gain = 10.000 ; free physical = 6463 ; free virtual = 13454
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10095.434 ; gain = 0.000 ; free physical = 6463 ; free virtual = 13454
 Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.12 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3415 ; free virtual = 11316
-Read Physdb Files: Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.62 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3415 ; free virtual = 11316
-Restored from archive | CPU: 0.840000 secs | Memory: 11.691956 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.63 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3415 ; free virtual = 11316
+Read RouteStorage: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.17 . Memory (MB): peak = 10095.434 ; gain = 0.000 ; free physical = 6459 ; free virtual = 13467
+Read Physdb Files: Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.71 . Memory (MB): peak = 10095.434 ; gain = 10.000 ; free physical = 6459 ; free virtual = 13467
+Restored from archive | CPU: 0.910000 secs | Memory: 11.690079 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:00.72 . Memory (MB): peak = 10095.434 ; gain = 10.000 ; free physical = 6459 ; free virtual = 13467
 Generating merged BMM file for the design top 'design_1_wrapper'...
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/muqtada/Documents/filtersoc/filtersoc.gen/sources_1/bd/design_1/ip/design_1_microblaze_riscv_0_0/data/riscv_bootloop.elf 
-refresh_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:23 . Memory (MB): peak = 10217.969 ; gain = 0.000 ; free physical = 3256 ; free virtual = 11152
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10095.434 ; gain = 0.000 ; free physical = 6524 ; free virtual = 13552
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 117 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 48 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 47 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 22 instances
+
+open_run: Time (s): cpu = 00:00:43 ; elapsed = 00:00:27 . Memory (MB): peak = 10407.531 ; gain = 981.145 ; free physical = 6171 ; free virtual = 13166
 CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
 WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
 set_property PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
@@ -313,166 +358,19 @@ program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 15:03:36
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-12 20:55:29
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 15:03:36
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-12 20:55:29
 INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-write_hw_platform -fixed -include_bit -force -file /home/muqtada/Documents/filtersoc/design_1_wrapperila.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: /home/muqtada/Documents/filtersoc/design_1_wrapperila.xsa ...
-WARNING: [Project 1-645] Board images not set in Hardware Platform.
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: /home/muqtada/Documents/filtersoc/design_1_wrapperila.xsa
-write_hw_platform: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 10230.238 ; gain = 12.270 ; free physical = 3217 ; free virtual = 11135
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Labtools 27-3176] hw_server failed during internal command.
-Resolution: Check that the hw_server is running and the hardware connectivity to the target
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Labtools 27-3176] hw_server failed during internal command.
-Resolution: Check that the hw_server is running and the hardware connectivity to the target
-save_wave_config {/home/muqtada/Documents/filtersoc/filtersoc.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_target {localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA}
-INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
-open_hw_target {localhost:3121/xilinx_tcf/Xilinx/jsn-Basys3-210183BB3DBFA-0362d093-0}
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/jsn-Basys3-210183BB3DBFA-0362d093-0
-close_hw_target {localhost:3121/xilinx_tcf/Xilinx/jsn-Basys3-210183BB3DBFA-0362d093-0}
-INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/jsn-Basys3-210183BB3DBFA-0362d093-0
-open_hw_target {localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA}
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-12 20:58:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-12 20:58:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
-set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-WARNING: [Labtools 27-3413] Dropping logic core with cellname:'design_1_i/ila_0' at location 'uuid_BE177176557E59FEACE2FE04795A2B22' from probes file, since it cannot be found on the programmed device.
-set_property PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 15:07:18
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 15:07:18
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 15:07:30
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 15:07:30
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Labtools 27-3176] hw_server failed during internal command.
-Resolution: Check that the hw_server is running and the hardware connectivity to the target
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
-ERROR: [Labtools 27-3176] hw_server failed during internal command.
-Resolution: Check that the hw_server is running and the hardware connectivity to the target
-save_wave_config {/home/muqtada/Documents/filtersoc/filtersoc.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-close_hw_target {localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA}
-INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
-open_hw_target {localhost:3121/xilinx_tcf/Xilinx/jsn-Basys3-210183BB3DBFA-0362d093-0}
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/jsn-Basys3-210183BB3DBFA-0362d093-0
-close_hw_target {localhost:3121/xilinx_tcf/Xilinx/jsn-Basys3-210183BB3DBFA-0362d093-0}
-INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/jsn-Basys3-210183BB3DBFA-0362d093-0
-open_hw_target {localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA}
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB3DBFA
-set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-set_property PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-WARNING: [Labtools 27-3413] Dropping logic core with cellname:'design_1_i/ila_0' at location 'uuid_BE177176557E59FEACE2FE04795A2B22' from probes file, since it cannot be found on the programmed device.
-set_property PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/muqtada/Documents/filtersoc/filtersoc.runs/impl_3/design_1_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 17:22:40
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 17:22:40
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 17:28:04
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 17:28:04
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}] -trigger_now
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 17:28:35
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 17:28:35
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 17:29:01
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 17:29:01
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 17:29:04
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 17:29:04
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 17:29:15
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 17:29:15
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 17:29:17
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 17:29:17
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-11 17:29:19
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-11 17:29:19
-INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/muqtada/Documents/filtersoc/filtersoc.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.

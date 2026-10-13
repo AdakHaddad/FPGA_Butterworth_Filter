@@ -515,9 +515,6 @@
         "xci_path": "ip/design_1_ila_0_0/design_1_ila_0_0.xci",
         "inst_hier_path": "ila_0",
         "parameters": {
-          "ALL_PROBE_SAME_MU": {
-            "value": "true"
-          },
           "C_MONITOR_TYPE": {
             "value": "Native"
           },
