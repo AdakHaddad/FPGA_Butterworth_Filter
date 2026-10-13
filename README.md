@@ -138,15 +138,29 @@ IP_REPO_PATHS=ip_repo
 
 HoG-generated configuration and source lists should be committed when they are part of the intended reproducible project setup.
 
-## 4. Open the Vivado Project
+## 4. Generate and Open the Vivado Project
 
-If the HoG initialization has generated the project files, use the project location reported by the script.
+Generate the `filtersoc` Vivado project from the repository configuration. Run this command from the repository root:
 
-Alternatively, open the existing Vivado project directly from the repository root:
+```bash
+./Hog/Do Create filtersoc
+```
+
+This invokes HoG's `Create` directive for the `filtersoc` project using the configuration and source lists under `Top/filtersoc/`.
+
+After project generation completes, locate the generated project file without selecting the HoG submodule's example or internal projects:
+
+```bash
+find . -name 'filtersoc.xpr' -not -path './Hog/*'
+```
+
+Open the resulting path with Vivado. For example, if the file is at the repository root:
 
 ```bash
 vivado filtersoc.xpr
 ```
+
+You can also launch Vivado and select **File → Open Project**, then choose the generated `.xpr` file.
 
 Once the project is open:
 
